@@ -11,4 +11,4 @@ However if a team member is habitually not completing their tasks, they may be a
 3.	Conflict Resolution All conflicts within the team will be decided by a Super Smash Bros match, Final Destination, 3 stock no items. The winner will decide who was right and who was wrong (Might makes right). 
 If this was an MD file, each of us would sign our names here at the bottom with an electronic signature and a separate github commit over the same document. 
 
-									                                                                    Signature: Liwen Sun
+									                        Signature: Liwen Sun
