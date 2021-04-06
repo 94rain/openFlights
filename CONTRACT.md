@@ -20,4 +20,4 @@ If this was an MD file, each of us would sign our names here at the bottom with 
 * Shuyang Ji (sji15)
 * Liwen Sun (liwens3)
 * Zhekai Ge (zhekaig2)
-* 
+* Yihan Zhang (yihanz8)
