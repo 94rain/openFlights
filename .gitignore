@@ -1,0 +1,11 @@
+
+## IDE
+.vscode
+
+# Compiled Object files
+*.o
+openflight
+test
+
+# Mac OS auto-generated files
+.DS_Store
