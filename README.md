@@ -12,7 +12,7 @@
 
 ## Running the program
 
-After building the program, enter the command `./openflight` in the terminal
+After building the program, run `./openflight` in the terminal
 
 ## Testing the program
 
