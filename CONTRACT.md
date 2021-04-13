@@ -2,22 +2,43 @@
 <h1 align="center"> liwens3-yihanz8-zhekaig2-sji15 </h1>
 
 ## Communication
-1. Team Meetings Our team will meet once a week every Tuesday or Thursday from 5-7 PM using Zoom. Each member will rotate being the designated note-taker, starting with liwens3. Notes will be stored on a Google document, time-stamped for each meeting. The note-taker is also responsible for drafting the weekly DEVELOPMENT LOG entry, which is approved by the team at the start of the following week’s meeting. 
-2. Assistance Each team member can be contacted through email, Discord, or WeChat. Outside of emergencies or other commitments, we commit to responding to emails within 48 hours. 
-3. Respect The note-taker for the week will also serve as the ‘project lead’ for the weekly meeting. Their role is to ensure that every member of the group has had a chance to speak or state their opinion about a design decision or any other topic related to the final project. All decisions will be accepted by simple majority – while unanimous agreement is preferred, it is not required. By signing this document, each member of the team commits to adhering to the decisions made, even if they personally disagree with them. 
-## Collaboration
-1. Work Distribution Each week, the necessary deliverables for the week will be determined by the full team and each member will volunteer to work on one or more deliverables. When no one volunteers, two team members will be randomly assigned to work on the task as a paired-programming team. If this leads to an unbalanced workload for the week, adjustments can be made on a case by case basis. 
-2. Time Commitment To ensure an equal distribution of work, each member is expected to independently work no less than two and no more than six hours per week on the project. If a deliverable ends up taking more time, the rest of the team should be pulled in to assist with the unforeseen complication, with each member taking an equal share of the workload or programming in pairs. It is the team’s responsibility, not the individual’s responsibility, to make sure a weekly deliverable is finished by the end of the week. 
-However if a team member is habitually not completing their tasks, they may be asked – politely – to explain their circumstances. Based on their explanation further actions, such as alerting a staff member, may be taken on a case by case basis decided by the other team members. 
-3. Conflict Resolution All conflicts within the team will be decided by a Super Smash Bros match, Final Destination, 3 stock no items. The winner will decide who was right and who was wrong (Might makes right). 
+1. **Team Meetings** 
+    We expect to meet once or twice every week every Tuesday or Thursday from 5-7 PM using Zoom or WeChat. 
+    
+    We expect everyone to come to the meeting prepared, attend meetings on time, listen attentively and be open to share their own opinions. If a team member cannot come to the meeting, they will need to inform other team members at least one day in advance to reschedule the meeting.
+    
+    There will be a note taker starting from Liwen Sun (liwens3) to write Development Log weekly.
+    
+2. **Assistance** 
 
-If this was an MD file, each of us would sign our names here at the bottom with an electronic signature and a separate github commit over the same document. 
+   To get assistance, each team member can be contacted through email, Discord, or WeChat. We will mostly use WeChat for real-time communications for simple and quick assistance. For sophisticated issues, we will discuss during meeting times or schedule additional meetings if necessary.
+
+   When we are immediately available, we expect the average response time to be 5 minutes. In other time periods, outside of emergencies or other commitments, we commit to responding to messages within 12 hours. 
+
+3. **Respect** 
+
+   We encourage open expression of different ideas. We all agree that we will utilize our own skills to contribute to the project. We will ensure every member has a chance to speak or state their opinion about a design decision or any other topic related to the final project. Each member will show respect for others’ ideas about our project.
+
+   We will avoid placing blame when things go wrong and instead discuss and explore how it can be improved.
+
+## Collaboration
+1. Work Distribution 
+We expect full participation from each team member. Everyone will be assigned workload equally weekly. Work distribution may be adjusted based on the progress and the actual workload of each part. If someone meets trouble during his assigned job and cannot figure it out by himself, we will help him together. 
+
+
+2. Time Commitment 
+Each team member is expected to commit 5-6 hours every week on our project. If someone has special issues which lead to time conflict, we will together figure out how to reassign our work and adjust our origin schedule to make up for the missed time.
+
+3. Conflict Resolution 
+
+   We will peacefully communicate with each other if a conflict resolution happens. We will send emails or directly talk with each other in person to solve this conflict. If one of our team members does not finish his assigned job, we will together help him and give more detailed suggestions about how to further our project. If there exists serious disagreement among us, we will contact our assigned mentor right away.
 
 ----
 
 **Signature**:
 
-* Shuyang Ji (sji15)
-* Liwen Sun (liwens3)
-* Zhekai Ge (zhekaig2)
-* Yihan Zhang (yihanz8)
+* 
+* 
+* 
+* 
+
