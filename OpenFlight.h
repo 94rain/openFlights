@@ -12,7 +12,7 @@
 using std::vector;
 using std::unordered_map;
 
-//edge list
+
 class OpenFlight{
     public:
         OpenFlight(string airport_file,string route_file,string start_ID);
@@ -23,8 +23,6 @@ class OpenFlight{
         Airport getAirport(string id);
         //get starting airport;
         Airport getStart();
-        //get one route
-        Route   getRoute(Airport& src,Airport& dest);
         //parse airport_data
         void loadAirportData(string airport_file);
         //parse route_data
