@@ -9,5 +9,5 @@
 - [x] Build the basic framework of our project
 - [x] Implement `Route` and `Airport` classes
 - [x] Implement File I/O and data processing functions
-
+- [x] Implement First algorithm BFS and add test cases
 ## April 19, 2021 - April 25, 2021
