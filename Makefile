@@ -3,7 +3,7 @@ EXENAME = openflight
 TEST = test
 # Object Types
 OBJS = main.o Openflight.o Airport.o Route.o BFS.o Dijkstra.o PageRank.o
-OBJS_TEST =tests/catch/catchmain.cpp test_BFS.o test_PageRank.o test_Dijkstra.o Openflight.o Airport.o Route.o BFS.o PageRank.o Dijkstra.o
+OBJS_TEST =tests/catch/catchmain.cpp test_graph.o test_BFS.o test_PageRank.o test_Dijkstra.o Openflight.o Airport.o Route.o BFS.o PageRank.o Dijkstra.o
 # Compilation Flags
 CXX = clang++
 CXXFLAGS = -std=c++14 -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
@@ -47,6 +47,9 @@ PageRank.o: algorithm/PageRank.cpp
 
 $(TEST): output_msg $(OBJS_TEST) 
 	$(LD) $(OBJS_TEST) $(LDFLAGS) -o $(TEST)
+
+test_graph.o : tests/test_graph.cpp 
+	$(CXX) $(CXXFLAGS) tests/test_graph.cpp
 
 test_BFS.o : tests/test_BFS.cpp 
 	$(CXX) $(CXXFLAGS) tests/test_BFS.cpp

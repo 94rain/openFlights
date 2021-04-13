@@ -1,6 +1,7 @@
 
 ## IDE
 .vscode
+*.json
 
 # Compiled Object files
 *.o
