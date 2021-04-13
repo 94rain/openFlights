@@ -24,11 +24,13 @@
 
 ## Collaboration
 1. **Work Distribution** 
-We expect full participation from each team member. Everyone will be assigned workload equally weekly. Work distribution may be adjusted based on the progress and the actual workload of each part. If someone meets trouble during his assigned job and cannot figure it out by himself, we will help him together. 
+
+   We expect full participation from each team member. Everyone will be assigned workload equally weekly. Work distribution may be adjusted based on the progress and the actual workload of each part. If someone meets trouble during his assigned job and cannot figure it out by himself, we will help him together. 
 
 
 2. **Time Commitment** 
-Each team member is expected to commit 5-6 hours every week on our project. If someone has special issues which lead to time conflict, we will together figure out how to reassign our work and adjust our origin schedule to make up for the missed time.
+
+   Each team member is expected to commit 5-6 hours every week on our project. If someone has special issues which lead to time conflict, we will together figure out how to reassign our work and adjust our origin schedule to make up for the missed time.
 
 3. **Conflict Resolution** 
 
