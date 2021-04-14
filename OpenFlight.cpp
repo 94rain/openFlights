@@ -42,10 +42,10 @@ void OpenFlight::loadAirportData(string airport_file){
             ss.ignore(256, '"');//we do not need to include the " "
             getline(ss, name, '"');
             ss.ignore(256, ',');
-            ss.ignore(2, '"');
+            ss.ignore(256, '"');
             getline(ss, city, '"');
             ss.ignore(256, ',');
-            ss.ignore(2, '"');
+            ss.ignore(256, '"');
             getline(ss, country, '"');
             ss.ignore(256, ',');
             getline(ss,iata,',');

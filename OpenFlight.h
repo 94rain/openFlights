@@ -15,7 +15,6 @@ using std::vector;
 class OpenFlight {
     public:
         OpenFlight(string airport_file, string route_file, string start_ID);
-
         // pass id to this function to get all of routes of one airports
         vector<Route> getAdjacentRoute(string id);
         // get one airport
