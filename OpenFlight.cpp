@@ -24,6 +24,11 @@ Airport OpenFlight::getStart(){
     return start;
 }
 
+unordered_map<string, Airport> OpenFlight::getAirport(){
+    return airports;
+}
+
+
 void OpenFlight::loadAirportData(string airport_file){
     string line;
 	ifstream infile (airport_file);

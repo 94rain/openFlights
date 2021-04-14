@@ -19,6 +19,8 @@ class OpenFlight {
         vector<Route> getAdjacentRoute(string id);
         // get one airport
         Airport getAirport(string id);
+        // get all airports
+        unordered_map<string, Airport> getAirport();
         // get starting airport;
         Airport getStart();
         // parse airport_data
