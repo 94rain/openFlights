@@ -11,5 +11,5 @@
 - [x] Implement File I/O and data processing functions
 - [x] Implement First algorithm BFS and add BFS test cases
 - [x] Add some basic test cases
-
+- [x] Fix BFS bug
 ## April 19, 2021 - April 25, 2021

@@ -97,9 +97,7 @@ void OpenFlight::loadRouteData(string route_file){
                 getline(ss, other_info,'\n');
                 //initialize a new route
                 Route new_route(airports[source_id],airports[destination_id],airline);
-                Route new_dest_route(airports[destination_id],airports[source_id],airline);
                 airport_routes[source_id].push_back(new_route);
-                airport_routes[destination_id].push_back(new_dest_route);
         }
      }else{
         cout<<"Cannot open the route_file"<<endl;
