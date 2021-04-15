@@ -27,7 +27,8 @@ class OpenFlight {
         void loadAirportData(string airport_file);
         // parse route_data
         void loadRouteData(string route_file);
-
+        //get total_airport_routes
+        unordered_map<string, vector<Route>> getAirportRoutes();
     private:
         // get a airport and its routes
         unordered_map<string, vector<Route>> airport_routes;
