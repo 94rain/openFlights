@@ -14,20 +14,50 @@ using std::vector;
 
 class OpenFlight {
     public:
+        /**
+         * OpenFlight 
+         * 
+         * @param  {string} airport_file : 
+         * @param  {string} route_file   : 
+         * @param  {string} start_ID     : 
+         */
         OpenFlight(string airport_file, string route_file, string start_ID);
-        // pass id to this function to get all of routes of one airports
+        /**
+         * pass id to this function to get all of routes of one airports
+         * @param  {string} id      : 
+         * @return {vector<Route>}  : 
+         */
         vector<Route> getAdjacentRoute(string id);
-        // get one airport
+        /**
+         * get one airport
+         * @param  {string} id : 
+         * @return {Airport}   : 
+         */
         Airport getAirport(string id);
-        // get all airports
+        /**
+         * get all airports
+         * @return {unordered_map<string,}  : 
+         */
         unordered_map<string, Airport> getAirport();
-        // get starting airport;
+        /**
+         * get starting airport
+         * @return {Airport}  : 
+         */
         Airport getStart();
-        // parse airport_data
+        /**
+         * parse airport_data
+         * @param  {string} airport_file : 
+         */
         void loadAirportData(string airport_file);
-        // parse route_data
+        /**
+         * parse route_data
+         * @param  {string} route_file : 
+         */
         void loadRouteData(string route_file);
-        //get total_airport_routes
+        /**
+         * get total_airport_routes
+         * @return {unordered_map<string,}  : 
+         */
         unordered_map<string, vector<Route>> getAirportRoutes();
     private:
         // get a airport and its routes

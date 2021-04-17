@@ -1,11 +1,3 @@
-/*
- * @Author: your name
- * @Date: 2021-04-17 20:09:12
- * @LastEditTime: 2021-04-17 20:42:38
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /cs225git/mnt/f/sp21/liwens3-yihanz8-zhekaig2-sji15/main.cpp
- */
 #include "OpenFlight.h"
 #include "algorithm/BFS.h"
 #include <iostream>
@@ -25,5 +17,4 @@ int main() {
   for (auto p : path) {
     cout << p.getName() << endl;
   }
-  cout << path[0].getName() << endl;
 }
