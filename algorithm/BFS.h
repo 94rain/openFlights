@@ -9,9 +9,11 @@ using std::vector;
 
 class BFS{
     public:
-        vector<Airport> getPath(OpenFlight graph);
-        int count;
-        Airport end;
+        vector<Airport> getPath(OpenFlight graph); 
+        int getCount();    
+        Airport getEnd();
     private:
         vector<Airport> path;
+        int count;
+        Airport end;
 };
