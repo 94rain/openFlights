@@ -3,14 +3,14 @@ EXENAME = openflight
 TEST = test
 
 # Object Types
-OBJS = main.o Openflight.o Airport.o Route.o BFS.o Dijkstra.o PageRank.o
-OBJS_TEST =tests/catch/catchmain.cpp test_graph.o test_BFS.o test_PageRank.o test_Dijkstra.o Openflight.o Airport.o Route.o BFS.o PageRank.o Dijkstra.o
+OBJS = main.o OpenFlight.o Airport.o Route.o BFS.o Dijkstra.o PageRank.o
+OBJS_TEST =tests/catch/catchmain.cpp test_graph.o test_BFS.o test_PageRank.o test_Dijkstra.o OpenFlight.o Airport.o Route.o BFS.o PageRank.o Dijkstra.o
 
 # Compilation Flags
 CXX = clang++
-CXXFLAGS = -std=c++14 -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
+CXXFLAGS = -std=c++1y -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
 LD = clang++
-LDFLAGS = -std=c++14 -stdlib=libc++ -lc++abi -lm
+LDFLAGS = -std=c++1y -stdlib=libc++ -lc++abi -lm
 
 # Custom Clang Enforcement
 include make/customClangEnforcement.mk
@@ -28,8 +28,8 @@ $(EXENAME): output_msg $(OBJS)
 main.o: main.cpp
 	$(CXX) $(CXXFLAGS) main.cpp
 
-Openflight.o: Openflight.cpp
-	$(CXX) $(CXXFLAGS) Openflight.cpp
+OpenFlight.o: OpenFlight.cpp
+	$(CXX) $(CXXFLAGS) OpenFlight.cpp
 
 Airport.o: Airport.cpp
 	$(CXX) $(CXXFLAGS) Airport.cpp
