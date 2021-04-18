@@ -10,6 +10,13 @@
 - [x] Implement `Route` and `Airport` classes
 - [x] Implement File I/O and data processing functions
 - [x] Implement First algorithm BFS and add BFS test cases
-- [x] Add some basic test cases
+- [x] Add some basic test cases for classes and OpenFlight graph
 - [x] Fix BFS bug
+- [x] Update README to include commands for building, running and testing the program
+
+
 ## April 19, 2021 - April 25, 2021
+- [ ] Implement Dijkstra's Algorithm
+
+## April 26, 2021 - May 2, 2021
+- [ ] Implement PageRank Algorithm

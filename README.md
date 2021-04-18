@@ -1,4 +1,5 @@
-# liwens3-yihanz8-zhekaig2-sji15
+<h1 align="center"> CS 225 Final Project</h1>
+<h3 align="center"> liwens3-yihanz8-zhekaig2-sji15 </h1>
 
 ## Document files
 * [Team Contract](CONTRACT.md)
@@ -22,4 +23,4 @@ After building the program, run `./openflight` in the terminal
       - run `./test [graph]` for OpenFlight graph basic tests
       - run `./test [class]` for classes (Airport and Route) constructor and getters tests
       - run `./test [bfs]` for BFS algorithm tests
-      - run `./test [dataset=n]` (n=1,2) for BFS algorithm tests
+      - run `./test [dataset=n]` (n=1,2,3,4) for testing individual datasets

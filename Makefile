@@ -1,9 +1,11 @@
 # Executable Name
 EXENAME = openflight
 TEST = test
+
 # Object Types
 OBJS = main.o Openflight.o Airport.o Route.o BFS.o Dijkstra.o PageRank.o
 OBJS_TEST =tests/catch/catchmain.cpp test_graph.o test_BFS.o test_PageRank.o test_Dijkstra.o Openflight.o Airport.o Route.o BFS.o PageRank.o Dijkstra.o
+
 # Compilation Flags
 CXX = clang++
 CXXFLAGS = -std=c++14 -stdlib=libc++ -c -g -O0 -Wall -Wextra -pedantic
