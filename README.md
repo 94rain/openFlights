@@ -21,6 +21,8 @@ After building the program, run `./openflight` in the terminal
 2. run `./test` for comprehensive tests
     - To test parts of the program:
       - run `./test [graph]` for OpenFlight graph basic tests
-      - run `./test [class]` for classes (Airport and Route) constructor and getters tests
       - run `./test [bfs]` for BFS algorithm tests
       - run `./test [dataset=n]` (n=1,2,3,4) for testing individual datasets
+    - (Not yet implemented)
+      - run `./test [dijkstra]` for Dijkstra's Algorithm tests
+      - run `./test [pagerank]` for PageRank Algorithm tests

@@ -1,7 +1,7 @@
 #include "../OpenFlight.h"
 #include "./catch/catch.hpp"
 
-TEST_CASE("Airport constructor and getters", "[class]") {
+TEST_CASE("Airport constructor and getters", "[graph]") {
   Airport a1(
       "1", "Goroka Airport", "Goroka", "Papua New Guinea", -6.081689834590001,
       -145.391998291,
@@ -16,7 +16,7 @@ TEST_CASE("Airport constructor and getters", "[class]") {
           "5282,10,\"U\",\"Pacific/Port_Moresby\",\"airport\",\"OurAirports\"");
 }
 
-TEST_CASE("Route constructor and getters", "[class]") {
+TEST_CASE("Route constructor and getters", "[graph]") {
   Airport a1("2965", "Sochi International Airport", "Sochi", "Russia",
              43.449902, 39.9566,
              "89,3,\"N\",\"Europe/Moscow\",\"airport\",\"OurAirports\"");
@@ -29,7 +29,7 @@ TEST_CASE("Route constructor and getters", "[class]") {
   REQUIRE(r1.getDest() == a2);
 }
 
-TEST_CASE("OpenFlight graph basic tests", "[start=2][graph]") {
+TEST_CASE("OpenFlight graph basic tests", "[graph]") {
   OpenFlight o1("data/simple_airports_1.csv", "data/simple_routes_1.csv", "2");
 
   SECTION("Starting Airport is exactly the input") {
