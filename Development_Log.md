@@ -8,7 +8,7 @@
 We implemented route as our graph's edge, airport as our graph's node and Openflight as our final graph. Liwen Sun added MakeFile and implemented our first algorithm BFS. Shuyang Ji added basic test cases for Openflight graph and BFS. They updated README to include necessary commands for compiling, runing and testing our project.
 
 ## April 19, 2021 - April 25, 2021
-- [ ] Implement Dijkstra's Algorithm
+  We calculate the distance be
 
 ## April 26, 2021 - May 2, 2021
 - [ ] Implement PageRank Algorithm
