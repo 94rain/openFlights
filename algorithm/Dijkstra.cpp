@@ -4,12 +4,13 @@
 
 using namespace std;
 
-int Dijkstra::get_distance(Airport destination) {
+double Dijkstra::get_distance() {
     return dis[destination.getID()];
 }
 
-Dijkstra::Dijkstra(OpenFlight graph, Airport start) {
-    StartPoint = start;
+Dijkstra::Dijkstra(OpenFlight graph, Airport desti) {
+    destination = desti;
+    start = graph.getStart();
     unordered_map<string, bool> visited;
     for (auto v : graph.getAirport()) {
         dis[v.first] = -1;
@@ -18,7 +19,7 @@ Dijkstra::Dijkstra(OpenFlight graph, Airport start) {
     dis[start.getID()] = 0;
     queue<string> q;
     q.push(start.getID());
-    while (!q.empty()) {
+    while (q.front() != destination.getID()) {
         string current = q.front();
         for (auto i : graph.getAdjacentRoute(current)) {
             string des = i.getDest().getID();
@@ -41,14 +42,14 @@ Dijkstra::Dijkstra(OpenFlight graph, Airport start) {
     }
 }
 
-vector<Airport> Dijkstra::get_path(Airport destination) {
+vector<Airport> Dijkstra::get_path() {
     vector<Airport> output;
     vector<Airport> result;
     for (Airport airport = destination; dis[airport.getID()] != 0; airport = last_airport[airport.getID()]) {
         output.push_back(airport);
     }
-    output.push_back(StartPoint);
-    for (unsigned i = output.size() - 1; i >= 0; i--) {
+    output.push_back(start);
+    for (int i = output.size() - 1; i >= 0; i--) {
         result.push_back(output[i]);
     }
     return result;

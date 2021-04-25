@@ -6,12 +6,14 @@ using namespace std;
 
 class Dijkstra{
     public:
-    Dijkstra(OpenFlight graph, Airport start);
-    int get_distance(Airport destination);
-    vector<Airport> get_path(Airport destination);
+    Dijkstra(OpenFlight graph, Airport desti);
+    double get_distance();
+    vector<Airport> get_path();
 
     private:
     unordered_map<string, double> dis;
     unordered_map<string, Airport> last_airport;
-    Airport StartPoint;
+    Airport destination;
+    Airport start;
+
 };
