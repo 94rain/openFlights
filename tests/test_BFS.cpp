@@ -25,11 +25,11 @@ TEST_CASE("BFS dataset sample #2 check", "[bfs][dataset=2]") {
   BFS s;
   auto path = s.getPath(o1);
   REQUIRE(s.getCount() == 7);
-  vector<string> actual_path{"Heydar Aliyev International Airport", "Begishevo Airport", "Koltsovo Airport", "Kazan International Airport", "Sochi International Airport", "Dushanbe Airport", "Belgorod International Airport"};
+  vector<string> actual_path{"Heydar Aliyev International Airport", "Begishevo Airport", "Koltsovo Airport", "Kazan International Airport", "Sochi International Airport", "Belgorod International Airport", "Dushanbe Airport"};
   for (unsigned i = 0; i < path.size(); i++) {
     REQUIRE(path[i].getName() == actual_path[i]);
   }
-  REQUIRE(s.getEnd().getName() == "Belgorod International Airport");
+  REQUIRE(s.getEnd().getName() == "Dushanbe Airport");
 }
 
 TEST_CASE("BFS dataset sample #3 check", "[bfs][dataset=3]") {
