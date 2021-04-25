@@ -25,11 +25,11 @@ TEST_CASE("BFS dataset sample #2 check", "[bfs][dataset=2]") {
   BFS s;
   auto path = s.getPath(o1);
   REQUIRE(s.getCount() == 7);
-  vector<string> actual_path{"Heydar Aliyev International Airport" ,"Begishevo Airport" ,"Sochi International Airport" ,"Dushanbe Airport" ,"Belgorod International Airport" ,"Khrabrovo Airport" ,"Kazan International Airport" ,"Heydar Aliyev International Airport"};
+  vector<string> actual_path{"Heydar Aliyev International Airport", "Begishevo Airport", "Koltsovo Airport", "Kazan International Airport", "Sochi International Airport", "Dushanbe Airport", "Belgorod International Airport"};
   for (unsigned i = 0; i < path.size(); i++) {
     REQUIRE(path[i].getName() == actual_path[i]);
   }
-    REQUIRE(s.getEnd().getName() == "Kazan International Airport");
+  REQUIRE(s.getEnd().getName() == "Belgorod International Airport");
 }
 
 TEST_CASE("BFS dataset sample #3 check", "[bfs][dataset=3]") {
@@ -41,7 +41,7 @@ TEST_CASE("BFS dataset sample #3 check", "[bfs][dataset=3]") {
   for (unsigned i = 0; i < path.size(); i++) {
     REQUIRE(path[i].getName() == actual_path[i]);
   }
-    REQUIRE(s.getEnd().getName() == "Verona Villafranca Airport");
+  REQUIRE(s.getEnd().getName() == "Verona Villafranca Airport");
 }
 
 
@@ -55,7 +55,7 @@ TEST_CASE("BFS dataset sample #4 check", "[bfs][dataset=4]") {
   for (unsigned i = 0; i < path.size(); i++) {
     REQUIRE(path[i].getName() == actual_path[i]);
   }
-    REQUIRE(s.getEnd().getName() == "Cologne Bonn Airport");
+  REQUIRE(s.getEnd().getName() == "Cologne Bonn Airport");
 }
 
 TEST_CASE("BFS comprehensive dataset number of traversed airports check", "[bfs]") {
