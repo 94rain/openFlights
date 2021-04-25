@@ -10,8 +10,13 @@ using std::endl;
 int main() {
   // how to use getAjacentRoute, pass a code of an airport
 
-  OpenFlight o1("data/simple_airports_4.csv", "data/simple_routes_4.csv", "1128");
-  Dijkstra d(o1, o1.getAirport("1154"));
+  OpenFlight o2("data/airports.csv", "data/routes.csv", "2965");
+  // OpenFlight o2("data/airports.csv", "data/routes.csv", "1");
+  //for (unsigned i = 0; i < o2.getAdjacentRoute(o2.getStart().getID()).size(); i++) {
+    //cout << o2.getAdjacentRoute(o2.getStart().getID())[i].getDest().getID() << ", "<< o2.getAdjacentRoute(o2.getStart().getID())[i].getDistance() << "; ";
+  //}
+  cout << "finish" << endl;
+  Dijkstra d(o2, o2.getAirport("3400"));
   cout << "finish constructing" << endl;
   cout << d.get_distance() << endl;
   //cout << d.get_distance(o2.getAirport("2962")) << endl;
@@ -22,6 +27,4 @@ int main() {
     cout << d.get_path()[i].getID() << ", ";
   }
   cout<< "finish" <<endl;
-  
-
 }

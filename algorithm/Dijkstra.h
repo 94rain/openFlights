@@ -10,6 +10,7 @@ using namespace std;
 
 class Dijkstra{
     public:
+<<<<<<< HEAD
     /** 
     * Constructor
     * determine a startpoint for finding the path
@@ -28,6 +29,10 @@ class Dijkstra{
     *  @param  destination  the endpoint for Dijkstra algorithm
     *  @return {vector<Airport>}
     */
+=======
+    Dijkstra(OpenFlight graph, Airport desti);
+    double get_distance();
+>>>>>>> 61cd341e1ef079e1fc8cc6c328fb0a862d4f20b9
     vector<Airport> get_path();
 
     private:
