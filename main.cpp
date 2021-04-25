@@ -25,7 +25,4 @@ int main() {
     cout << d.get_path()[i].getID() << ", ";
   }
   cout<< "finish" <<endl;
-  
-    
-
 }
