@@ -58,10 +58,10 @@ class OpenFlight {
          * get total_airport_routes
          * @return {unordered_map<string,}  : 
          */
-        unordered_map<string, vector<Route>> getAirportRoutes();
+        unordered_map<string, vector<Route> > getAirportRoutes();
     private:
         // get a airport and its routes
-        unordered_map<string, vector<Route>> airport_routes;
+        unordered_map<string, vector<Route> > airport_routes;
         // a container of airports
         unordered_map<string, Airport> airports;
         // start point
