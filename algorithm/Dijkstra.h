@@ -2,10 +2,6 @@
 #include "../OpenFlight.h"
 #include <unordered_map>
 
-#pragma once
-#include "../OpenFlight.h"
-#include <unordered_map>
-
 using namespace std;
 
 class Dijkstra{
