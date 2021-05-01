@@ -12,4 +12,4 @@
 
 
 ## April 26, 2021 - May 2, 2021
-- [ ] Implement PageRank Algorithm
+  We decided to change our third algorithm PageRank since it will create a large 7000 * 7000 huge matrix mutiplication on actual dataset which will take 25 mins to produce final results. After our consideration, we will implement A* algorithm as our third algorithm. When we were implementing this algorithm, the most difficult part is how to understand heuristic function of AStar. Liwen Sun was responsible for implementing main part of AStar. Then Zhekai Ge optimized our codes, making it efficient on actual dataset. Shuyang JI and Yihan Zhang added test cases for this algorithm.
