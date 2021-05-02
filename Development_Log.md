@@ -1,15 +1,15 @@
 <h1 align="center">Development Log</h1>
 
 ## April 5, 2021 - April 11, 2021
-  At the first week, we decided to use the OpenFlight as our dataset and implement BFS traversal, Dijkstra's algorithm and PageRank algorithm in a directed graph. Moreover, everyone signed up the contract and drew up project proposal. At the same time, we have splitted up equal workload to everyone. 
+  In the first week, we decided to use the OpenFlight as our dataset and implement BFS traversal, Dijkstra's algorithm, and PageRank algorithm in a directed graph. Moreover, everyone signed the contract and drew up the project proposal. At the same time, we have split up an equal workload to everyone. 
 
 ## April 12, 2021 - April 18, 2021
-  We built the basic graph framwork for our project. During the time, we met some trouble on how to parse airport data to our graph, but finally we fixed these bug.
-  We implemented route as our graph's edge, airport as our graph's node and Openflight as our final graph. Liwen Sun added MakeFile and implemented our first algorithm BFS. Shuyang Ji added basic test cases for Openflight graph and BFS. They updated README to include necessary commands for compiling, runing and testing our project.
+  We built the basic graph framework for our project. During the time, we met some trouble on how to parse airport data to our graph, but finally, we fixed these bugs.
+  We implemented `route` as our graph's edge, `airport` as our graph's node, and `Openflight` classes as our final graph. Liwen Sun added MakeFile and implemented our first algorithm BFS. Shuyang Ji added basic test cases for the Openflight graph and BFS. They updated README to include necessary commands for compiling, running, and testing our project.
 
 ## April 19, 2021 - April 25, 2021
-  We implement the Dijkstra class. It includes three methods, the constructor, get_path and get distance. The constructor accepts a starting airport and calculate the shortest distance between all of the other airports and the start point storing it into a map. Then get_path and get_distance methods would accept the Airport format of destination and return the coresponding value(distance and the best path to the destination). Zhekai Ge implemented Dijkstra.h and Dijkstra.cpp and Yihan Zhang added the test cases for the algorithm.
+  We implement the `Dijkstra` class. It includes a constructor and two methods `get_path`, and `get_distance`. The constructor accepts a starting airport and calculates the shortest distance between all of the other airports and the start point storing it into a map. Then get_path and get_distance methods would accept the Airport format of destination and return the corresponding value (distance and the best path to the destination). Zhekai Ge implemented Dijkstra.h and Dijkstra.cpp and Yihan Zhang added the test cases for the algorithm.
 
 
 ## April 26, 2021 - May 2, 2021
-  We decided to change our third algorithm PageRank since it will create a large 7000 * 7000 huge matrix mutiplication on actual dataset which will take 25 mins to produce final results. After our consideration, we will implement A* algorithm as our third algorithm. When we were implementing this algorithm, the most difficult part is how to understand heuristic function of AStar. Liwen Sun was responsible for implementing main part of AStar. Then Zhekai Ge optimized our codes, making it efficient on actual dataset. Shuyang JI and Yihan Zhang added test cases for this algorithm.
+  We decided to change our third algorithm PageRank since it will create a large 7000 * 7000 huge matrix multiplication on the actual dataset which will take 25 mins to produce the final results. After our consideration, we will implement the A* algorithm as our third algorithm. When we were implementing this algorithm, the most difficult part is how to understand the heuristic function of AStar. Liwen Sun was responsible for implementing the main part of AStar. Then Zhekai Ge optimized our codes, making them efficient on the actual dataset. Shuyang Ji and Yihan Zhang added test cases for this algorithm.
