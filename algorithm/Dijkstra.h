@@ -27,7 +27,8 @@ class Dijkstra{
     *  @return {vector<Airport>}
     */
     vector<Airport> get_path(Airport desti);
-
+    
+    private:
     // the comparator for the priority_queue
     struct Comparator {
         bool operator()(const pair<Airport, double> &lhs,
@@ -45,7 +46,6 @@ class Dijkstra{
                                   vector<pair<Airport, double>>, Comparator>
                         temp_q,
                     const Airport &nearby) const;
-    private:
     // priority queue to find the min dis
     priority_queue<pair<Airport, double>, vector<pair<Airport, double>>,Comparator> q;
     // the map of the distance from each airport to the start point
