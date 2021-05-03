@@ -25,10 +25,26 @@ Dijkstra::Dijkstra(OpenFlight graph) {
             if (dis[current.getID()] + i.getDistance() < dis[i.getDest().getID()]) {
                 dis[i.getDest().getID()] = dis[current.getID()] + i.getDistance();
                 last_airport[i.getDest().getID()] = current;
-                q.push(make_pair(i.getDest(), dis[i.getDest().getID()]));
+                // we use this to check whether nearby is in q
+                if (!isExist(q, i.getDest())) {
+                    q.push(make_pair(i.getDest(), dis[i.getDest().getID()]));
+                }
             }
         }
     }
+}
+
+// we need to check whether nearby airport has already been in the q
+bool Dijkstra::isExist(priority_queue<pair<Airport, double>, vector<pair<Airport, double>>, Comparator>
+                        temp_q, const Airport &nearby) const {
+    while (!temp_q.empty()) {
+      const Airport &temp_airport = temp_q.top().first;
+      if (temp_airport.getID() == nearby.getID()) {
+        return true;
+      }
+      temp_q.pop();
+    }
+    return false;
 }
 
 vector<Airport> Dijkstra::get_path(Airport desti) {

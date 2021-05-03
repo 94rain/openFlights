@@ -12,7 +12,6 @@ class Dijkstra{
     * Constructor
     * determine a startpoint for finding the path
     * @param  graph the OpenFlight graph for Dijkstra algorithm
-    * @param  desti the destination for Dijkstra algorithm
     */
     Dijkstra(OpenFlight graph);
     /** 
@@ -35,7 +34,16 @@ class Dijkstra{
             return lhs.second > rhs.second;
         }
     };
-
+    /**
+     * we need to check whether nearby airport has already been in the q
+     * @param  temp_q the copy of q
+     * @param  nearby nearby airport
+     * @return {bool}
+     */
+    bool isExist(priority_queue<pair<Airport, double>,
+                                  vector<pair<Airport, double>>, Comparator>
+                        temp_q,
+                    const Airport &nearby) const;
     private:
     // priority queue to find the min dis
     priority_queue<pair<Airport, double>, vector<pair<Airport, double>>,Comparator> q;

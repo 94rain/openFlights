@@ -22,8 +22,8 @@ int main() {
     // cout << d.get_distance(o2.getAirport("2966")) << endl;
     Dijkstra c(o1);
     
-    cout << c.get_distance(o1.getAirport("502")) << endl;
-    for (auto i : c.get_path(o1.getAirport("502"))) {
+    cout << c.get_distance(o1.getAirport("2966")) << endl;
+    for (auto i : c.get_path(o1.getAirport("2966"))) {
       cout << i.getID() << endl;
     }
     
