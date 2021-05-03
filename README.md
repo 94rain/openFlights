@@ -23,6 +23,5 @@ After building the program, run `./openflight` in the terminal
       - run `./test [graph]` for OpenFlight graph basic tests
       - run `./test [bfs]` for BFS algorithm tests
       - run `./test [dataset=n]` (n=1,2,3,4) for testing individual datasets
-    - (Not yet implemented)
       - run `./test [dijkstra]` for Dijkstra's Algorithm tests
-      - run `./test [pagerank]` for PageRank Algorithm tests
+      - run `./test [astar]` for A* Algorithm tests

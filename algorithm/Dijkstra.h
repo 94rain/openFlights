@@ -1,44 +1,49 @@
 #pragma once
 #include "../OpenFlight.h"
 #include <unordered_map>
-
-#pragma once
-#include "../OpenFlight.h"
-#include <unordered_map>
+#include <cfloat>
+#include <queue>
 
 using namespace std;
 
 class Dijkstra{
     public:
-<<<<<<< HEAD
     /** 
     * Constructor
     * determine a startpoint for finding the path
     * @param  graph the OpenFlight graph for Dijkstra algorithm
     * @param  desti the destination for Dijkstra algorithm
     */
-    Dijkstra(OpenFlight graph, Airport desti);
+    Dijkstra(OpenFlight graph);
     /** 
     * calculate the distance based on the given destination
     * @param  destination  the endpoint for Dijkstra algorithm
     * @return {double}
     */
-    double get_distance();
+    double get_distance(Airport desti);
     /**
     * store the path between two different airports
     *  @param  destination  the endpoint for Dijkstra algorithm
     *  @return {vector<Airport>}
     */
-=======
-    Dijkstra(OpenFlight graph, Airport desti);
-    double get_distance();
->>>>>>> 61cd341e1ef079e1fc8cc6c328fb0a862d4f20b9
-    vector<Airport> get_path();
+    vector<Airport> get_path(Airport desti);
+
+    // the comparator for the priority_queue
+    struct Comparator {
+        bool operator()(const pair<Airport, double> &lhs,
+                        const pair<Airport, double> &rhs) {
+            return lhs.second > rhs.second;
+        }
+    };
 
     private:
+    // priority queue to find the min dis
+    priority_queue<pair<Airport, double>, vector<pair<Airport, double>>,Comparator> q;
+    // the map of the distance from each airport to the start point
     unordered_map<string, double> dis;
+    // the map for finding the path from start point to the destination
     unordered_map<string, Airport> last_airport;
-    Airport destination;
+    // the start airport
     Airport start;
 
 };

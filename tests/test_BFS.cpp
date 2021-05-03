@@ -62,6 +62,6 @@ TEST_CASE("BFS comprehensive dataset number of traversed airports check", "[bfs]
   OpenFlight o1("data/airports.csv", "data/routes.csv", "1");
   BFS s;
   auto path = s.getPath(o1);
-  REQUIRE(s.getCount() == 7699);
+  REQUIRE(s.getCount() == 7698);
   REQUIRE(s.getEnd().getName() == "Sky Ranch At Carefree Airport");
 }

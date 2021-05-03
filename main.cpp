@@ -1,28 +1,31 @@
 #include "OpenFlight.h"
+#include "algorithm/AStar.h"
 #include "algorithm/BFS.h"
+#include "algorithm/Dijkstra.h"
 #include <iostream>
 #include <vector>
-#include "algorithm/Dijkstra.h"
 using std::cout;
 using std::endl;
 
-//int main(int argc, const char * argv[]) {
+// int main(int argc, const char * argv[]) {
 int main() {
-  // how to use getAjacentRoute, pass a code of an airport
-
-  OpenFlight o2("data/simple_airports_3.csv", "data/simple_routes_3.csv", "1064");
-  for (unsigned i = 0; i < o2.getAdjacentRoute(o2.getStart().getID()).size(); i++) {
-    cout << o2.getAdjacentRoute(o2.getStart().getID())[i].getDest().getID() << ", "<< o2.getAdjacentRoute(o2.getStart().getID())[i].getDistance() << "; ";
-  }
-  cout << "finish" << endl;
-  Dijkstra d(o2, o2.getAirport("1550"));
-  cout << d.get_distance() << endl;
-  Dijkstra c(o2, o2.getAirport("1064"));
-  cout << c.get_distance() << endl;
-  Dijkstra b(o2, o2.getAirport("302"));
-  cout << b.get_distance() << endl;
-  for (unsigned i = 0; i < d.get_path().size(); i++) {
-    cout << d.get_path()[i].getID() << ", ";
-  }
-  cout<< "finish" <<endl;
+    // how to use getAjacentRoute, pass a code of an airport    
+    OpenFlight o1("data/airports.csv", "data/routes.csv", "1");
+    // OpenFlight o2("data/airports.csv", "data/routes.csv", "1");
+    // for (unsigned i = 0; i < o2.getAdjacentRoute(o2.getStart().getID()).size();
+    //      i++) {
+    //   cout << o2.getAdjacentRoute(o2.getStart().getID())[i].getDest().getID()
+    //        << ", " << o2.getAdjacentRoute(o2.getStart().getID())[i].getDistance()
+    //        << "; ";
+    // }
+    // cout << d.get_distance(o2.getAirport("2962")) << endl;
+    // cout << d.get_distance(o2.getAirport("2966")) << endl;
+    Dijkstra c(o1);
+    
+    cout << c.get_distance(o1.getAirport("502")) << endl;
+    for (auto i : c.get_path(o1.getAirport("502"))) {
+      cout << i.getID() << endl;
+    }
+    
+  
 }

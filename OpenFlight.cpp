@@ -28,7 +28,7 @@ unordered_map<string, Airport> OpenFlight::getAirport(){
     return airports;
 }
 
-unordered_map<string, vector<Route>> OpenFlight::getAirportRoutes(){
+unordered_map<string, vector<Route> > OpenFlight::getAirportRoutes(){
     return airport_routes;
 }
 void OpenFlight::loadAirportData(string airport_file){
@@ -96,8 +96,13 @@ void OpenFlight::loadRouteData(string route_file){
                 getline(ss, destination_id,',');
                 getline(ss, other_info,'\n');
                 //initialize a new route
-                Route new_route(airports[source_id],airports[destination_id],airline);
-                airport_routes[source_id].push_back(new_route);
+                //ignore undefined airport
+                if(source_id !="\\N" && destination_id!="\\N"){
+                    if(airports.find(source_id)!=airports.end()&&airports.find(destination_id)!=airports.end()){
+                        Route new_route(airports[source_id],airports[destination_id],airline);
+                        airport_routes[source_id].push_back(new_route);
+                    }
+                }
         }
      }else{
         cout<<"Cannot open the route_file"<<endl;

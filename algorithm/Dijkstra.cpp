@@ -1,56 +1,47 @@
 #include "Dijkstra.h"
-#include <queue>
 #include <iostream>
 
 using namespace std;
 
-double Dijkstra::get_distance() {
-    return dis[destination.getID()];
+double Dijkstra::get_distance(Airport desti) {
+    return dis[desti.getID()];
 }
 
-Dijkstra::Dijkstra(OpenFlight graph, Airport desti) {
-    destination = desti;
+Dijkstra::Dijkstra(OpenFlight graph) {
+    // set the start point
     start = graph.getStart();
-    unordered_map<string, bool> visited;
+    // initialize every value in the dis to the max
     for (auto v : graph.getAirport()) {
-        dis[v.first] = -1;
-        visited[v.first] = false;
+        dis[v.first] = DBL_MAX;
     }
+    // set the start point dis to 0 and push the start airport
     dis[start.getID()] = 0;
-    queue<string> q;
-    q.push(start.getID());
-    while (q.front() != destination.getID()) {
-        string current = q.front();
-        for (auto i : graph.getAdjacentRoute(current)) {
-            string des = i.getDest().getID();
-            if (!visited[des]) {
-                q.push(des);
-                double new_dis = dis[current] + i.getDistance();
-                if (dis[des]<0) {
-                    dis[des] = new_dis;
-                    last_airport[des] = graph.getAirport(current);
-                } else {
-                    if (dis[des] > new_dis) {
-                        dis[des] = new_dis;
-                        last_airport[des] = graph.getAirport(current);
-                    }
-                }
+    q.push(make_pair(start, dis[start.getID()]));
+    // loop through the airports calculating the distance to the start airport
+    while (!q.empty()) {
+        Airport current = q.top().first;
+        q.pop();
+        for (auto i : graph.getAdjacentRoute(current.getID())) {
+            if (dis[current.getID()] + i.getDistance() < dis[i.getDest().getID()]) {
+                dis[i.getDest().getID()] = dis[current.getID()] + i.getDistance();
+                last_airport[i.getDest().getID()] = current;
+                q.push(make_pair(i.getDest(), dis[i.getDest().getID()]));
             }
         }
-        visited[current] = true;
-        q.pop();
     }
 }
 
-vector<Airport> Dijkstra::get_path() {
+vector<Airport> Dijkstra::get_path(Airport desti) {
     vector<Airport> output;
-    vector<Airport> result;
-    for (Airport airport = destination; dis[airport.getID()] != 0; airport = last_airport[airport.getID()]) {
+    // if there is no path from the start to desti return a empty vector
+    if (dis[desti.getID()] == DBL_MAX) {
+        return output;
+    }
+    // using last_airport to find the path from desti to the start and then reverse it 
+    for (Airport airport = desti; dis[airport.getID()] != 0; airport = last_airport[airport.getID()]) {
         output.push_back(airport);
     }
     output.push_back(start);
-    for (int i = output.size() - 1; i >= 0; i--) {
-        result.push_back(output[i]);
-    }
-    return result;
+    reverse(output.begin(), output.end());
+    return output;
 }

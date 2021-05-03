@@ -1,7 +1,6 @@
 #pragma once
 #include <queue>
 #include <unordered_map>
-
 #include "../OpenFlight.h"
 
 using std::queue;
