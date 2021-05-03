@@ -46,15 +46,19 @@ bool Dijkstra::isExist(priority_queue<pair<Airport, double>, vector<pair<Airport
 
 vector<Airport> Dijkstra::get_path(Airport desti) {
     vector<Airport> output;
+    Airport current = desti;
+    string currentID = desti.getID(); 
     // if there is no path from the start to desti return a empty vector
-    if (dis[desti.getID()] == DBL_MAX) {
+    if(dis[currentID] == DBL_MAX){
         return output;
     }
     // using last_airport to find the path from desti to the start and then reverse it 
-    for (Airport airport = desti; dis[airport.getID()] != 0; airport = last_airport[airport.getID()]) {
-        output.push_back(airport);
+    while (last_airport.find(currentID) != last_airport.end()) {
+      output.push_back(current);
+      current = last_airport[currentID];
+      currentID = current.getID();
     }
-    output.push_back(start);
+    output.push_back(current);
     reverse(output.begin(), output.end());
     return output;
 }

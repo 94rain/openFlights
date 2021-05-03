@@ -13,6 +13,8 @@ using std::string;
 // int main(int argc, const char * argv[]) {
 int main() {
   string str;
+  string src;
+  string dest;
   while (true) {
     cout << "Select your algorithm from: (enter a number from 1, 2, 3 or exit) \n 1. BFS \n 2. Dijkstra \n 3. A* " << endl;
     getline(cin, str);
@@ -23,11 +25,8 @@ int main() {
       for (auto i : path) {
         cout << i.getName() << endl;
       }
-      cout << "BFS ends" << endl;
       cout << "The total number of Airport is " << s.getCount() << endl;
     } else if (str == "2") {
-      string src;
-      string dest;
       cout << "please enter the ID of starting airport: " << endl;
       getline(cin, src);
       cout << "please enter the ID of ending airport: " << endl;
@@ -37,7 +36,7 @@ int main() {
       Airport start = o.getStart();
       Airport end = o.getAirport(dest);
       vector<Airport> path = d.get_path(end);
-      if (path.empty()) {
+      if (path.empty() || path[0] == Airport()) {
         cout << "Error, there is no route between source airport and "
                 "destination airport"
              << endl;
@@ -50,8 +49,6 @@ int main() {
         }
       }
     } else if (str == "3") {
-      string src;
-      string dest;
       cout << "please enter the ID of starting airport: " << endl;
       getline(cin, src);
       cout << "please enter the ID of ending airport: " << endl;
