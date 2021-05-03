@@ -6,7 +6,6 @@
 #include <vector>
 using std::string;
 using std::vector;
-using namespace std;
 
 TEST_CASE("Dijkstra dataset sample #1 check", "[dijkstra][dataset=1]") {
 
@@ -147,36 +146,28 @@ TEST_CASE("Dijkstra on total dataset", "[dijkstra][totaldataset]") {
   for (unsigned i = 0; i < path3.size(); i++) {
     REQUIRE(path3[i].getID() == actual_path3[i]);
   }
+}
 
-  OpenFlight o4("data/airports.csv", "data/routes.csv", "9026");
-  Dijkstra d4(o4);
-  Airport start4 = o4.getStart();
-  Airport end4 = o4.getAirport("9026");
-  REQUIRE( ( d4.get_distance(end4) - 0 ) < 0.001 );
-  vector<string> actual_path4{ "9026" };
-  auto path4 = d3.get_path(end4);
-  for (unsigned i = 0; i < path4.size(); i++) {
-    REQUIRE(path4[i].getID() == actual_path4[i]);
+TEST_CASE("Dijkstra on total dataset for same starting and ending airports", "[dijkstra][totaldataset]") {
+  OpenFlight o1("data/airports.csv", "data/routes.csv", "9026");
+  Dijkstra d1(o1);
+  Airport start1 = o1.getStart();
+  Airport end1 = o1.getAirport("9026");
+  REQUIRE( ( d1.get_distance(end1) - 0 ) < 0.001 );
+  vector<string> actual_path1{ "9026" };
+  auto path1 = d1.get_path(end1);
+  for (unsigned i = 0; i < path1.size(); i++) {
+    REQUIRE(path1[i].getID() == actual_path1[i]);
   }
+}
 
-  OpenFlight o5("data/airports.csv", "data/routes.csv", "9026");
-  Dijkstra d5(o5);
-  Airport start5 = o5.getStart();
-  Airport end5 = o5.getAirport("9026");
-  REQUIRE( ( d5.get_distance(end5) - 0 ) < 0.001 );
-  vector<string> actual_path5{ "9026" };
-  auto path5 = d3.get_path(end5);
-  for (unsigned i = 0; i < path5.size(); i++) {
-    REQUIRE(path5[i].getID() == actual_path5[i]);
-  }
-  
-  // testcase for non-connected airports
-  OpenFlight o6("data/airports.csv", "data/routes.csv", "3090");  
-  Dijkstra d6(o6);
-  Airport start6 = o6.getStart();
-  Airport end6 = o6.getAirport("995");
-  auto path6 = d6.get_path(end6);
-  REQUIRE( path6.empty() );
+TEST_CASE("Dijkstra on total dataset for disconnected airports", "[dijkstra][totaldataset]") {
+  OpenFlight o1("data/airports.csv", "data/routes.csv", "3090");  
+  Dijkstra d1(o1);
+  Airport start1 = o1.getStart();
+  Airport end1 = o1.getAirport("995");
+  auto path1 = d1.get_path(end1);
+  REQUIRE( path1.empty() );
 
 }
 
