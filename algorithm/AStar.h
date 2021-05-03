@@ -53,7 +53,7 @@ class AStar {
         double heuristic(const Airport &src, const Airport &dest) const;
 
 
-        // We use this queue to find the minest f
+        // We use this queue to find the min f
         priority_queue<pair<Airport, double>, vector<pair<Airport, double>>,
                        Comparator>
             open_set;

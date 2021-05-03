@@ -11,7 +11,7 @@ Airport AStar::aStarSearch(OpenFlight graph, Airport src, Airport dest) {
     f[src.getID()] = heuristic(src, dest);
     open_set.push(make_pair(src, f[src.getID()]));
     while (!open_set.empty()) {
-      // we need to find smallest fscore
+      // we need to find min f
       Airport current = open_set.top().first;
       string currentID = current.getID();
       // if current node is destination, we finished our search
