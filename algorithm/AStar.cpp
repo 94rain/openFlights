@@ -1,8 +1,5 @@
 #include "AStar.h"
 
-using std::cout;
-using std::endl;
-
 Airport AStar::aStarSearch(OpenFlight graph, Airport src, Airport dest) {
     pre.clear();
     // initialize f and g with default value of infinity

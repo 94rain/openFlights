@@ -1,10 +1,11 @@
 #pragma once
 #include "../OpenFlight.h"
-#include <unordered_map>
 #include <cfloat>
 #include <queue>
 
-using namespace std;
+using std::make_pair;
+using std::priority_queue;
+using std::reverse;
 
 class Dijkstra{
     public:

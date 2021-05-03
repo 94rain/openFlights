@@ -1,7 +1,4 @@
 #include "Dijkstra.h"
-#include <iostream>
-
-using namespace std;
 
 double Dijkstra::get_distance(Airport desti) {
     return dis[desti.getID()];

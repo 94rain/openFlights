@@ -1,7 +1,4 @@
 #include "BFS.h"
-#include <iostream>
-using std::cout;
-using std::endl;
 
 vector<Airport> BFS::getPath(OpenFlight graph) {
     queue<Airport> q;
