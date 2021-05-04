@@ -27,7 +27,7 @@
 1. After building the program, run `./openflight` in the terminal.
 2. There are 3 options appeared `1. BFS` `2. Dijkstra` `3. A*`. Choose one of the algorithms by entering the number `1` `2` or `3`.
 3. Then, the computer will ask you to enter the ID of startiing airport and ending airport (Just type the ID with numbers like `302`).
-4. Finally, the computer will use the choosed algorithm to calculate the shortest path from the starting airport to the ending airport and print out the coresponding airport IDs and names along the path.
+4. Finally, the computer will use the choosed algorithm to calculate the shortest path from the starting airport to the ending airport and print out the coresponding airport IDs and names along the path including the start and end point.
 
 ## Testing the program
 
