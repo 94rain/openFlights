@@ -24,7 +24,9 @@
 
 ## Running the program
 
-After building the program, run `./openflight` in the terminal
+1. After building the program, run `./openflight` in the terminal.
+2. There are 3 options appeared `1. BFS` `2. Dijkstra` `3. A*`. Choose one of them, enter the number `1` `2` or `3`.
+3. 
 
 ## Testing the program
 
