@@ -7,7 +7,7 @@
 * [Team Contract](CONTRACT.md)
 * [Project Proposal](Project_Proposal.md)
 * [Development Log](Development_Log.md)
-* [AStar.cpp](AStar.cpp)
+* [AStar.cpp](algorithm/AStar.cpp)
 
 ## Building the program
 1. Clone the project repository to your local machine
