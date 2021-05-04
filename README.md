@@ -25,11 +25,12 @@
 ## Running the program
 
 1. After building the program, run `./openflight` in the terminal.
-2. There are 3 options appeared `1. BFS` `2. Dijkstra` `3. A*`. 
-![Image text](sample shot/choose.png)
-Choose one of the algorithms by entering the number `1` `2` or `3`.
+2. There are 3 options appeared `1. BFS` `2. Dijkstra` `3. A*`. Choose one of the algorithms by entering the number `1` `2` or `3`.
+![Image text](https://raw.github-dev.cs.illinois.edu/cs225-sp21/liwens3-yihanz8-zhekaig2-sji15/master/sample%20shot/choose.png?token=AAACUNH4AVXRU2IEVOSWE6DATMEEG)
 3. Then, the computer will ask you to enter the ID of startiing airport and ending airport (Just type the ID with numbers like `302`).
-4. Finally, the computer will use the choosed algorithm to calculate the shortest path from the starting airport to the ending airport and print out the coresponding airport IDs and names along the path including the start and end point.
+![Image text](https://raw.github-dev.cs.illinois.edu/cs225-sp21/liwens3-yihanz8-zhekaig2-sji15/master/sample%20shot/set_airport.png?token=AAACUNHKFSIJLZVOYVWRKSTATMESY)
+4. Finally, the computer will use the choosed algorithm to calculate the shortest path from the starting airport to the ending airport and print out the coresponding airport IDs and names along the path including the start and end point. The result will look like this.
+![Image text](https://raw.github-dev.cs.illinois.edu/cs225-sp21/liwens3-yihanz8-zhekaig2-sji15/master/sample%20shot/result.png?token=AAACUNFZ43HRXJ2XPXOSLNDATMEWM)
 
 ## Testing the program
 
