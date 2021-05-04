@@ -56,7 +56,7 @@ int main() {
       getline(cin, src);
       cout << "please enter the ID of ending airport: " << endl;
       getline(cin, dest);
-      OpenFlight o("data/simple_airports_2.csv", "data/simple_routes_2.csv", src);
+      OpenFlight o("data/airports.csv", "data/routes.csv", src);
       AStar a;
       Airport start = o.getStart();
       Airport end = o.getAirport(dest);
