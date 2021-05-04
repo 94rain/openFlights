@@ -6,10 +6,9 @@ using std::stod;
 using std::endl;
 
 
-OpenFlight::OpenFlight(string airport_file,string route_file, string start_ID){
+OpenFlight::OpenFlight(string airport_file,string route_file){
     loadAirportData(airport_file);
     loadRouteData(route_file);
-    this->start = airports[start_ID];
 }
 
 vector<Route> OpenFlight::getAdjacentRoute(string id){
@@ -18,10 +17,6 @@ vector<Route> OpenFlight::getAdjacentRoute(string id){
 
 Airport OpenFlight::getAirport(string id){
     return airports[id];
-}
-
-Airport OpenFlight::getStart(){
-    return start;
 }
 
 unordered_map<string, Airport> OpenFlight::getAirport(){

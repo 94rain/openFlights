@@ -13,8 +13,9 @@ class Dijkstra{
     * Constructor
     * determine a startpoint for finding the path
     * @param  graph the OpenFlight graph for Dijkstra algorithm
+    * @param  src the start airport for Dijkstra algorithm
     */
-    Dijkstra(OpenFlight graph);
+    Dijkstra(OpenFlight graph,Airport src);
     /** 
     * calculate the distance based on the given destination
     * @param  destination  the endpoint for Dijkstra algorithm

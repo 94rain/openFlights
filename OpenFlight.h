@@ -20,9 +20,8 @@ class OpenFlight {
          * 
          * @param  {string} airport_file : 
          * @param  {string} route_file   : 
-         * @param  {string} start_ID     : 
          */
-        OpenFlight(string airport_file, string route_file, string start_ID);
+        OpenFlight(string airport_file, string route_file);
         /**
          * pass id to this function to get all of routes of one airports
          * @param  {string} id      : 
@@ -40,11 +39,6 @@ class OpenFlight {
          * @return {unordered_map<string,}  : 
          */
         unordered_map<string, Airport> getAirport();
-        /**
-         * get starting airport
-         * @return {Airport}  : 
-         */
-        Airport getStart();
         /**
          * parse airport_data
          * @param  {string} airport_file : 
@@ -65,6 +59,4 @@ class OpenFlight {
         unordered_map<string, vector<Route> > airport_routes;
         // a container of airports
         unordered_map<string, Airport> airports;
-        // start point
-        Airport start;
 };

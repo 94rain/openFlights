@@ -4,16 +4,14 @@ double Dijkstra::get_distance(Airport desti) {
     return dis[desti.getID()];
 }
 
-Dijkstra::Dijkstra(OpenFlight graph) {
-    // set the start point
-    start = graph.getStart();
+Dijkstra::Dijkstra(OpenFlight graph, Airport src) {
     // initialize every value in the dis to the max
     for (auto v : graph.getAirport()) {
         dis[v.first] = DBL_MAX;
     }
     // set the start point dis to 0 and push the start airport
-    dis[start.getID()] = 0;
-    q.push(make_pair(start, dis[start.getID()]));
+    dis[src.getID()] = 0;
+    q.push(make_pair(src, dis[src.getID()]));
     // loop through the airports calculating the distance to the start airport
     while (!q.empty()) {
         Airport current = q.top().first;

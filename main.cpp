@@ -20,7 +20,7 @@ int main() {
     getline(cin, str);
     // this part is for BFS
     if (str == "1") {
-      OpenFlight o("data/airports.csv", "data/routes.csv", "1");
+      OpenFlight o("data/airports.csv", "data/routes.csv");
       BFS s;
       auto path = s.getPath(o);
       for (auto i : path) {
@@ -33,9 +33,9 @@ int main() {
       getline(cin, src);
       cout << "please enter the ID of ending airport: " << endl;
       getline(cin, dest);
-      OpenFlight o("data/airports.csv", "data/routes.csv", src);
-      Dijkstra d(o);
-      Airport start = o.getStart();
+      OpenFlight o("data/airports.csv", "data/routes.csv");
+      Airport start = o.getAirport(src);
+      Dijkstra d(o,start);
       Airport end = o.getAirport(dest);
       vector<Airport> path = d.get_path(end);
       if (path.empty() || path[0] == Airport()) {
@@ -56,9 +56,9 @@ int main() {
       getline(cin, src);
       cout << "please enter the ID of ending airport: " << endl;
       getline(cin, dest);
-      OpenFlight o("data/airports.csv", "data/routes.csv", src);
+      OpenFlight o("data/airports.csv", "data/routes.csv");
       AStar a;
-      Airport start = o.getStart();
+      Airport start = o.getAirport(src);
       Airport end = o.getAirport(dest);
       vector<Airport> path = a.reconstructPath(o, start, end);
       if (path[0] == Airport()) {

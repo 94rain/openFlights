@@ -7,7 +7,7 @@ using std::string;
 using std::vector;
 
 TEST_CASE("BFS dataset sample #1 check", "[bfs][dataset=1]") {
-  OpenFlight o1("data/simple_airports_1.csv", "data/simple_routes_1.csv", "1");
+  OpenFlight o1("data/simple_airports_1.csv", "data/simple_routes_1.csv");
   BFS s;
   auto path = s.getPath(o1);
   REQUIRE(s.getCount() == 4);
@@ -21,7 +21,7 @@ TEST_CASE("BFS dataset sample #1 check", "[bfs][dataset=1]") {
 }
 
 TEST_CASE("BFS dataset sample #2 check", "[bfs][dataset=2]") {
-  OpenFlight o1("data/simple_airports_2.csv", "data/simple_routes_2.csv", "2922");
+  OpenFlight o1("data/simple_airports_2.csv", "data/simple_routes_2.csv");
   BFS s;
   auto path = s.getPath(o1);
   REQUIRE(s.getCount() == 7);
@@ -33,7 +33,7 @@ TEST_CASE("BFS dataset sample #2 check", "[bfs][dataset=2]") {
 }
 
 TEST_CASE("BFS dataset sample #3 check", "[bfs][dataset=3]") {
-  OpenFlight o1("data/simple_airports_3.csv", "data/simple_routes_3.csv", "1064");
+  OpenFlight o1("data/simple_airports_3.csv", "data/simple_routes_3.csv");
   BFS s;
   auto path = s.getPath(o1);
   REQUIRE(s.getCount() == 4);
@@ -47,11 +47,11 @@ TEST_CASE("BFS dataset sample #3 check", "[bfs][dataset=3]") {
 
 
 TEST_CASE("BFS dataset sample #4 check", "[bfs][dataset=4]") {
-  OpenFlight o1("data/simple_airports_4.csv", "data/simple_routes_4.csv", "1154");
+  OpenFlight o1("data/simple_airports_4.csv", "data/simple_routes_4.csv");
   BFS s;
   auto path = s.getPath(o1);
   REQUIRE(s.getCount() == 5);
-  vector<string> actual_path{"Benina International Airport", "Mohammed V International Airport", "Cairo International Airport", "Leonardo da Vinci–Fiumicino Airport", "Cologne Bonn Airport"};
+  vector<string> actual_path{"Benina International Airport","Cairo International Airport", "Mohammed V International Airport", "Leonardo da Vinci–Fiumicino Airport", "Cologne Bonn Airport"};
   for (unsigned i = 0; i < path.size(); i++) {
     REQUIRE(path[i].getName() == actual_path[i]);
   }
@@ -59,7 +59,7 @@ TEST_CASE("BFS dataset sample #4 check", "[bfs][dataset=4]") {
 }
 
 TEST_CASE("BFS comprehensive dataset number of traversed airports check", "[bfs]") {
-  OpenFlight o1("data/airports.csv", "data/routes.csv", "1");
+  OpenFlight o1("data/airports.csv", "data/routes.csv");
   BFS s;
   auto path = s.getPath(o1);
   REQUIRE(s.getCount() == 7698);

@@ -30,11 +30,7 @@ TEST_CASE("Route constructor and getters", "[graph]") {
 }
 
 TEST_CASE("OpenFlight graph basic tests", "[graph]") {
-  OpenFlight o1("data/simple_airports_1.csv", "data/simple_routes_1.csv", "2");
-
-  SECTION("Starting Airport is exactly the input") {
-    REQUIRE(o1.getStart().getID() == "2");
-  }
+  OpenFlight o1("data/simple_airports_1.csv", "data/simple_routes_1.csv");
 
   SECTION("Airport properties check") {
     Airport a1 = o1.getAirport("1");
