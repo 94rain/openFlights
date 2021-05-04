@@ -7,6 +7,7 @@
 * [Team Contract](CONTRACT.md)
 * [Project Proposal](Project_Proposal.md)
 * [Development Log](Development_Log.md)
+* [AStar.cpp](AStar.cpp)
 
 ## Building the program
 1. Clone the project repository to your local machine
@@ -27,3 +28,4 @@ After building the program, run `./openflight` in the terminal
       - run `./test [dataset=n]` (n=1,2,3,4) for testing individual datasets
       - run `./test [dijkstra]` for Dijkstra's Algorithm tests
       - run `./test [astar]` for A* Algorithm tests
+
