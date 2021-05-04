@@ -3,7 +3,7 @@
 
 [toc]
 
-## Document files
+## Document files (Algorithms: AStar, BFS, Dijkstra)
 * [Team Contract](CONTRACT.md)
 * [Project Proposal](Project_Proposal.md)
 * [Development Log](Development_Log.md)
