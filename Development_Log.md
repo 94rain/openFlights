@@ -1,5 +1,7 @@
 <h1 align="center">Development Log</h1>
 
+[toc]
+
 ## April 5, 2021 - April 11, 2021
   In the first week, we decided to use the OpenFlight as our dataset and implement BFS traversal, Dijkstra's algorithm, and PageRank algorithm in a directed graph. Moreover, everyone signed the contract and drew up the project proposal. At the same time, we have split up an equal workload to everyone. 
 
@@ -13,3 +15,6 @@
 
 ## April 26, 2021 - May 2, 2021
   We decided to change our third algorithm PageRank since it will create a large 7000 * 7000 huge matrix multiplication on the actual dataset which will take 25 mins to produce the final results. After our consideration, we will implement the A* algorithm as our third algorithm. When we were implementing this algorithm, the most difficult part is how to understand the heuristic function of AStar. Liwen Sun was responsible for implementing the main part of AStar. Then Zhekai Ge optimized our codes, making them efficient on the actual dataset. Shuyang Ji and Yihan Zhang added test cases for this algorithm.
+
+## May 3, 2021 - May 9, 2021
+We started to work on the main program. We wrote a initial draft for the project results. [WIP]

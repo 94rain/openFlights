@@ -1,10 +1,21 @@
 <h1 align="center"> CS 225 Final Project</h1>
 <h3 align="center"> liwens3-yihanz8-zhekaig2-sji15 </h1>
 
-## Document files
+[toc]
+
+## Document files (Algorithms: AStar, BFS, Dijkstra)
 * [Team Contract](CONTRACT.md)
 * [Project Proposal](Project_Proposal.md)
 * [Development Log](Development_Log.md)
+* [AStar.cpp](algorithm/AStar.cpp)
+* [AStar.h](algorithm/AStar.h)
+* [BFS.cpp](algorithm/BFS.cpp)
+* [BFS.h](algorithm/BFS.h)
+* [Dijkstra.cpp](algorithm/Dijkstra.cpp)
+* [Dijkstra.h](algorithm/Dijkstra.h)
+
+## Video
+*
 
 ## Building the program
 1. Clone the project repository to your local machine
@@ -25,3 +36,4 @@ After building the program, run `./openflight` in the terminal
       - run `./test [dataset=n]` (n=1,2,3,4) for testing individual datasets
       - run `./test [dijkstra]` for Dijkstra's Algorithm tests
       - run `./test [astar]` for A* Algorithm tests
+
