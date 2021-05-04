@@ -8,6 +8,11 @@
 * [Project Proposal](Project_Proposal.md)
 * [Development Log](Development_Log.md)
 * [AStar.cpp](algorithm/AStar.cpp)
+* [AStar.h](algorithm/AStar.h)
+* [BFS.cpp](algorithm/BFS.cpp)
+* [BFS.h](algorithm/BFS.h)
+* [Dijkstra.cpp](algorithm/Dijkstra.cpp)
+* [Dijkstra.h](algorithm/Dijkstra.h)
 
 ## Building the program
 1. Clone the project repository to your local machine
