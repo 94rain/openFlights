@@ -1,6 +1,8 @@
 <h1 align="center"> CS 225 Final Project</h1>
 <h3 align="center"> liwens3-yihanz8-zhekaig2-sji15 </h1>
 
+[toc]
+
 ## Document files
 * [Team Contract](CONTRACT.md)
 * [Project Proposal](Project_Proposal.md)
