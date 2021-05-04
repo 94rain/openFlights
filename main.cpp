@@ -18,6 +18,7 @@ int main() {
   while (true) {
     cout << "Select your algorithm from: (enter a number from 1, 2, 3 or exit) \n 1. BFS \n 2. Dijkstra \n 3. A* " << endl;
     getline(cin, str);
+    // this part is for BFS
     if (str == "1") {
       OpenFlight o("data/airports.csv", "data/routes.csv", "1");
       BFS s;
@@ -26,6 +27,7 @@ int main() {
         cout << i.getName() << endl;
       }
       cout << "The total number of Airport is " << s.getCount() << endl;
+      // this part is for dijkstra
     } else if (str == "2") {
       cout << "please enter the ID of starting airport: " << endl;
       getline(cin, src);
@@ -48,12 +50,13 @@ int main() {
           cout << airport.getID() << ":\t" << airport.getName() << endl;
         }
       }
+      // this part is for Astar
     } else if (str == "3") {
       cout << "please enter the ID of starting airport: " << endl;
       getline(cin, src);
       cout << "please enter the ID of ending airport: " << endl;
       getline(cin, dest);
-      OpenFlight o("data/airports.csv", "data/routes.csv", src);
+      OpenFlight o("data/simple_airports_2.csv", "data/simple_routes_2.csv", src);
       AStar a;
       Airport start = o.getStart();
       Airport end = o.getAirport(dest);
@@ -68,9 +71,11 @@ int main() {
           cout << airport.getID() << ":\t" << airport.getName() << endl;
         }
       }
+      // exit our program
     } else if (str == "exit") {
       cout << "Program ends" << endl;
       break;
+      // invalid command line
     } else {
       cout << "Your input is invalid. Please try again. (enter a number from 1, 2, 3 or exit)" << endl;
     }
