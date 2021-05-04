@@ -15,7 +15,7 @@
 * [Dijkstra.h](algorithm/Dijkstra.h)
 
 ## Video
-.
+*
 
 ## Building the program
 1. Clone the project repository to your local machine
