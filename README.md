@@ -1,9 +1,15 @@
 <h1 align="center"> CS 225 Final Project</h1>
-<h3 align="center"> liwens3-yihanz8-zhekaig2-sji15 </h1>
+<h3 align="center"> liwens3-yihanz8-zhekaig2-sji15 </h3>
 
-[toc]
+<small>[Document files](#document-files)</small>
+<small>[Video](#video)</small>
+<small>[Building the program](#building-the-program)</small>
+<small>[Running the program](#running-the-program)</small>
+<small>[Testing the program](#testing-the-program)</small>
 
-## Document files (Algorithms: AStar, BFS, Dijkstra)
+
+
+## Document files
 * [Team Contract](CONTRACT.md)
 * [Project Proposal](Project_Proposal.md)
 * [Development Log](Development_Log.md)
@@ -25,17 +31,17 @@
 ## Running the program
 
 1. After building the program, run `./openflight` in the terminal.
-2. There are 3 options appeared `1. BFS` `2. Dijkstra` `3. A*`. Choose one of the algorithms by entering the number `1` `2` or `3`.
+2. There are 3 options appeared `1. BFS`, `2. Dijkstra`, `3. A*`. Choose one of the algorithms by entering the number `1`, `2` or `3`.
 
-    ![Image text](https://raw.github-dev.cs.illinois.edu/cs225-sp21/liwens3-yihanz8-zhekaig2-sji15/master/assets/example_choose_algorithm.png?token=AAACUNGVVJYTOG6ZWYPZMO3ATMFYU)
+    ![Image text](assets/example_choose_algorithm.png)
 
-3. Then, the computer will ask you to enter the ID of startiing airport and ending airport (Just type the ID with numbers like `302`).
+3. Then, the terminal will ask you to enter the ID of starting airport and ending airport (Just type the ID with numbers like `302`).
 
-    ![Image text](https://raw.github-dev.cs.illinois.edu/cs225-sp21/liwens3-yihanz8-zhekaig2-sji15/master/assets/example_set_airport.png?token=AAACUNBXC4TXYNHK3O7LUOLATMF26)
+    ![Image text](assets/example_set_airport.png)
 
-4. Finally, the computer will use the choosed algorithm to calculate the shortest path from the starting airport to the ending airport and print out the coresponding airport IDs and names along the path including the start and end point. The result will look like this.
+4. Finally, the program will use the chosen algorithm to calculate the shortest path from the starting airport to the ending airport and print out the corresponding airport IDs and names along the path including the start and end point. The result will look like this:
 
-    ![Image text](https://raw.github-dev.cs.illinois.edu/cs225-sp21/liwens3-yihanz8-zhekaig2-sji15/master/assets/example_result%20%20.png?token=AAACUNA7KMOUYS7P4A4EVDTATMF2E)
+    ![Image text](assets/example_result.png)
 
 ## Testing the program
 
