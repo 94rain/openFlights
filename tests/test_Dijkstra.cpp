@@ -8,7 +8,6 @@ using std::string;
 using std::vector;
 
 TEST_CASE("Dijkstra dataset sample #1 check", "[dijkstra][dataset=1]") {
-
   OpenFlight o1("data/simple_airports_1.csv", "data/simple_routes_1.csv");
   Airport start = o1.getAirport("1");
   Dijkstra d(o1,start);
@@ -112,6 +111,17 @@ TEST_CASE("Dijkstra dataset sample #4 check case2 ", "[dijkstra][dataset=4]") {
   }
 }
 
+
+TEST_CASE("Dijkstra dataset sample #5 for disconnected airports", "[dijkstra][dataset=5]") {
+  OpenFlight o1("data/simple_airports_5.csv", "data/simple_routes_5.csv");
+  Airport start1 = o1.getAirport("3395"); 
+  Dijkstra d1(o1,start1);
+  Airport end1 = o1.getAirport("9481");
+  auto path1 = d1.get_path(end1);
+  REQUIRE( path1.empty() );
+
+}
+
 TEST_CASE("Dijkstra on total dataset", "[dijkstra][totaldataset]") {
 
   OpenFlight o1("data/airports.csv", "data/routes.csv");
@@ -159,15 +169,5 @@ TEST_CASE("Dijkstra on total dataset for same starting and ending airports", "[d
   for (unsigned i = 0; i < path1.size(); i++) {
     REQUIRE(path1[i].getID() == actual_path1[i]);
   }
-}
-
-TEST_CASE("Dijkstra on total dataset for disconnected airports", "[dijkstra][totaldataset]") {
-  OpenFlight o1("data/airports.csv", "data/routes.csv"); 
-  Airport start1 = o1.getAirport("3090"); 
-  Dijkstra d1(o1,start1);
-  Airport end1 = o1.getAirport("995");
-  auto path1 = d1.get_path(end1);
-  REQUIRE( path1.empty() );
-
 }
 

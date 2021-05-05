@@ -115,3 +115,13 @@ TEST_CASE("Astar dataset sample #4 case #2 check", "[astar][dataset=4]") {
       REQUIRE(path[i].getID() == actual_path[i]);
     }
 }
+
+TEST_CASE("Astar dataset sample #5", "[astar][dataset=5]") {
+  OpenFlight o1("data/simple_airports_5.csv", "data/simple_routes_5.csv");
+  AStar a1;
+  Airport start = o1.getAirport("3395");
+  Airport end = o1.getAirport("9481");
+  vector<Airport> path = a1.reconstructPath(o1, start, end);
+  REQUIRE(path.size() == 1);
+  REQUIRE(path[0]==Airport());
+}

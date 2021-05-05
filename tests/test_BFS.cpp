@@ -58,6 +58,19 @@ TEST_CASE("BFS dataset sample #4 check", "[bfs][dataset=4]") {
   REQUIRE(s.getEnd().getName() == "Cologne Bonn Airport");
 }
 
+TEST_CASE("BFS dataset sample #5 check", "[bfs][dataset=5]") {
+  OpenFlight o1("data/simple_airports_5.csv", "data/simple_routes_5.csv");
+  BFS s;
+  auto path = s.getPath(o1);
+  REQUIRE(s.getCount() == 5);
+  vector<string> actual_path{"Guatuso Airport","Zagora Airport", "Bao'anying Airport", "Chengdu Shuangliu International Airport", "Chongqing Jiangbei International Airport"};
+  for (unsigned i = 0; i < path.size(); i++) {
+    REQUIRE(path[i].getName() == actual_path[i]);
+  }
+  REQUIRE(s.getEnd().getName() == "Chongqing Jiangbei International Airport");
+}
+
+
 TEST_CASE("BFS comprehensive dataset number of traversed airports check", "[bfs]") {
   OpenFlight o1("data/airports.csv", "data/routes.csv");
   BFS s;
