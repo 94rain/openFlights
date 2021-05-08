@@ -59,11 +59,22 @@ In this example, we choose Goroka Airport as our source and London Gatwick Airpo
 If we choose disconnected airports, A* search will provide error messages accordingly.
 ![Astar_testcase1_2](assets/Astar_testcase1_2.png)
 
-<img src="assets/Astar_testcase1_3.png" alt="Astar_testcase1_3" style="zoom:67%;" />
+
+Application on test dataset to prove our algorithm is successful:
+Simple Cycle: (Sample 1)
 
 
 
-![Astar_testcase1_4](assets/Astar_testcase1_4.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
