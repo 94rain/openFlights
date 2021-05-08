@@ -62,6 +62,9 @@ If we choose disconnected airports, A* search will provide error messages accord
 
 Application on test dataset to prove our algorithm is successful:
 Simple Cycle: (Sample 1)
+![Astar_simple_cycle](assets/Astar_simple_cycle.png)
+
+
 
 
 
