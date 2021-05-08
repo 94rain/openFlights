@@ -69,28 +69,28 @@ Start node 3, End node 4
 After our manual computation, the path is node 3 -> node 1 -> node 4 which conforms to the result of our algorithm.
 
 Complex Cycle: (Sample #2)
-png
+![AStar_complex_cycle](assets/AStar_complex_cycle.png)
 
 Start Node: 2979 End Node: 2922
 
 After our manual computation, the path is node 2979 -> node 2965 -> node 2990 -> Node 6969 -> Node 2922 which conforms to the result of our algorithm.
 
 Connected Without Cycle: (Sample 3)
-png
+![AStar_connect_without_cycle](assets/AStar_connect_without_cycle.png)
 
 Start Node: 1550 End Node: 302
 
 After our manual computation, the path is node 1550 -> node 502 -> node 1064 -> Node 302 which conforms to the result of our algorithm
 
 Connected Without Cycle: (Sample 4)
-png
+![AStar_connect_without_cycle_1](assets/AStar_connect_without_cycle_1.png)
 
 Start Node: 344 End Node: 1154
 
 After our manual computation, the path is node 344 -> node 1555 -> node 1128 -> Node 1154 which conforms to the result of our algorithm.
 
 Disconnected: (Sample 5)
-png
+![AStar_disconnected](assets/AStar_disconnected.png)
 
 Start Node: 3393	End Node: 8335
 
