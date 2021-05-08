@@ -11,23 +11,12 @@ To avoid processing a node more than once, we use an `unordered_map` (key: Airpo
 We use a `queue` that contain the frontier airports along which the algorithm is currently searching. 
 The simple BFS is only appliable when the graph is connected. To make it work on disconnected graph, we modified the algorithm to perform BFS from each unvisited airport.
 To test the correctness of our BFS algorithm, we developed test cases on five smaller datasets (including simple, complex cycles and disconnected graphs) and checked whether the output path is same as the expected path.
-#### Methods
-
-`vector<Airport> getPath(OpenFlight graph)` get the path of all visited airports during BFS traversal
-
-`int getCount()` get the number of visited airports during BFS traversal
-
-`Airport getEnd()` get the ending airport after BFS traversal
-
-#### Examples
 
 **Simple Cycle** (Sample #1): 4 is the starting point. 
 
 Path of the traversed airports (ID): 4, 2, 1, 3
 
 <img src="assets/bfs_testcase1_1.png" alt="image-20210506173850837" style="zoom: 50%;" />![image-20210506174729338](assets/bfs_testcase1_2.png)
-
-
 
 **Complex Cycle** (Sample #2):
 
@@ -76,7 +65,7 @@ Start Node: 2979 End Node: 2922
 After our manual computation, the path is node 2979 -> node 2965 -> node 2990 -> Node 6969 -> Node 2922 which conforms to the result of our algorithm.
 
 Connected Without Cycle: (Sample 3)
-![AStar_connect_without_cycle](assets/AStar_connect_without_cycle.png)
+![AStar_connect_without_cycle](assets/AStar_connected_without_cycle.png)
 
 Start Node: 1550 End Node: 302
 
