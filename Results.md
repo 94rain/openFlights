@@ -43,7 +43,7 @@ Then we compute its neighours’ corresponding f(n) and compare their new f(n) w
 Application on full dataset:
 
 In this example, we choose Goroka Airport as our source and London Gatwick Airport as our destination.
-<img src="assets/Astar_testcase1_1.png" alt="Astar_testcase1_1" style="zoom: 80%;" />
+<img src="assets/Astar_testcase1_1.png" alt="Astar_testcase1_1" width="500px" height="200px" style="zoom: 80%;" />
 
 If we choose disconnected airports, A* search will provide error messages accordingly.
 <img src="assets/Astar_testcase1_2.png" alt="Astar_testcase1_2" width="600px" height="100px" style="zoom: 50%;" />
