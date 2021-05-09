@@ -42,44 +42,44 @@ Then we compute its neighours’ corresponding f(n) and compare their new f(n) w
 Application on full dataset:
 
 In this example, we choose Goroka Airport as our source and London Gatwick Airport as our destination.
-![Astar_testcase1_1](assets/Astar_testcase1_1.png)
+<img src="assets/Astar_testcase1_1.png" alt="Astar_testcase1_1" style="zoom: 80%;" />
 
 If we choose disconnected airports, A* search will provide error messages accordingly.
-![Astar_testcase1_2](assets/Astar_testcase1_2.png)
+<img src="assets/Astar_testcase1_2.png" alt="Astar_testcase1_2" style="zoom: 50%;" />
 
 
 Application on test dataset to prove our algorithm is successful:
 
 Simple Cycle: (Sample #1)
-![AStar_simple_cycle](assets/AStar_simple_cycle.png)
+<img src="assets/AStar_simple_cycle.png" alt="AStar_simple_cycle" style="zoom: 50%;" />
 
 Start node 3, End node 4
 
 After our manual computation, the path is node 3 -> node 1 -> node 4 which conforms to the result of our algorithm.
 
 Complex Cycle: (Sample #2)
-![AStar_complex_cycle](assets/AStar_complex_cycle.png)
+<img src="assets/AStar_complex_cycle.png" alt="AStar_complex_cycle" style="zoom:50%;" />
 
 Start Node: 2979 End Node: 2922
 
 After our manual computation, the path is node 2979 -> node 2965 -> node 2990 -> Node 6969 -> Node 2922 which conforms to the result of our algorithm.
 
 Connected Without Cycle: (Sample 3)
-![AStar_connect_without_cycle](assets/AStar_connected_without_cycle.png)
+<img src="assets/AStar_connected_without_cycle.png" alt="AStar_connect_without_cycle" style="zoom:50%;" />
 
 Start Node: 1550 End Node: 302
 
 After our manual computation, the path is node 1550 -> node 502 -> node 1064 -> Node 302 which conforms to the result of our algorithm
 
 Connected Without Cycle: (Sample 4)
-![AStar_connect_without_cycle_1](assets/AStar_connect_without_cycle_1.png)
+<img src="assets/AStar_connect_without_cycle_1.png" alt="AStar_connect_without_cycle_1" style="zoom:50%;" />
 
 Start Node: 344 End Node: 1154
 
 After our manual computation, the path is node 344 -> node 1555 -> node 1128 -> Node 1154 which conforms to the result of our algorithm.
 
 Disconnected: (Sample 5)
-![AStar_disconnected](assets/AStar_disconnected.png)
+<img src="assets/AStar_disconnected.png" alt="AStar_disconnected" style="zoom:50%;" />
 
 Start Node: 3393	End Node: 8335
 
