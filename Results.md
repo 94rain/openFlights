@@ -38,7 +38,7 @@ A* is an informed search algorithm. In our project, it starts from a specific st
 At each iteration of its main loop, we use priority queue to select the airport that minimizes
                                                                     f(n) = g(n) + h(n)
 where n is the next airport on the path, g(n) is the route distance from source airport to n. h(n) is a heuristic function that estimates the shortest distance from n to the target airport. 
-Then we compute its neighours’ corresponding f(n) and compare their new f(n) with their original f(n). If new f(n) is smaller than original f(n), then we update its neighours’ f(n) and add its neighbours to our priority queue. Moreover, we record the previous airport to reconstruct our path. If the airport we pop from our priority queue is our target, then we finished our search. If the priority queue is empty and our targret still is never reached, this means there does not exists route between source and destination airport.
+Then we record the sum of the current nodes' g(n) and the route distance to its neighbours as tentative_g. If tentative_g is smaller than its neighbours' original g(n), we update its neighours’ g(n) and f(n). Moreover, we need to add its neighbours to our priority queue. Also, we record the previous airport to reconstruct our path. If the airport we pop from our priority queue is our target, then we finished our search. If the priority queue is empty and our targret still is never reached, this means there does not exists route between source and destination airport.
 
 Application on full dataset:
 
