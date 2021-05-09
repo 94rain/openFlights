@@ -14,7 +14,7 @@
   * [Dijkstra.h](algorithm/Dijkstra.h) · [Dijkstra.cpp](algorithm/Dijkstra.cpp)
 
 ## Video
-(WIP)
+https://youtu.be/uc4YN6WH-4I
 
 ## Building the program
 1. Clone the project repository
