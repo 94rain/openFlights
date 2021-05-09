@@ -4,6 +4,7 @@
 For our project, we selected openflight dataset to implement the following algorithms: BFS, Dijkstra's algorithm and A* search algorithms. We wish we could use this three graph algorithms to find the shortest path between different airports in real lives. In this report, we will analyze these algorithms and show the outcomes of them.
 ## Implementations
 There are two main datasets routes.csv and airports.csv. Airports.csv contains thoughts of names of airports and routes.csv contains routes between different airports. We implement three cpp files to process the datasets: Airport.cpp, OpenFlight.cpp and Route.cpp. Airport.cpp enables us to access the IDs, locations, names and so on of the airports in the dataset. OpenFlight.cpp mainly enables us to access all routes for a specific airport and use unorderd map for storing the data of airports and routes. Route.cpp enables us to fix the source and destination of a route, calculate the distance of that route and store the route by tracing the name of airports. We used Haversine function to compute the distance of every route.
+
 ### Breadth First Search
 
 The first algorithm we implemented the Breadth First Search. In our project, we use this algorithm to search each airport from source to destination.
@@ -16,19 +17,19 @@ To test the correctness of our BFS algorithm, we developed test cases on five sm
 
 Path of the traversed airports (ID): 4, 2, 1, 3
 
-<img src="assets/bfs_testcase1_1.png" alt="image-20210506173850837" style="zoom: 50%;" />![image-20210506174729338](assets/bfs_testcase1_2.png)
+<img src="assets/bfs_testcase1_1.png" alt="image-20210506173850837" width="200px" height="200px" style="zoom: 50%;" />![image-20210506174729338](assets/bfs_testcase1_2.png)
 
 **Complex Cycle** (Sample #2):
 
 Path of the traversed airports (ID): 2922, 6969, 2975, 2990, 2965, 6156, 2979
 
-<img src="assets/bfs_testcase2_1.png" alt="image-20210506184754023" style="zoom: 50%;" /><img src="assets/bfs_testcase2_2.png" alt="image-20210506175018273" style="zoom: 67%;" />
+<img src="assets/bfs_testcase2_1.png" alt="image-20210506184754023" width="400px" height="300px" style="zoom: 50%;" /><img src="assets/bfs_testcase2_2.png" alt="image-20210506175018273" style="zoom: 67%;" />
 
 **Disconnected graph** (Sample #5):
 
 Path of the IDs of traversed airports (ID): 9481, 8335, 6435, 3395, 3393
 
-<img src="assets/bfs_testcase5_1.png" alt="image-20210506185235021" style="zoom:67%;" /> <img src="assets/bfs_testcase5_2.png" style="zoom:80%;" />
+<img src="assets/bfs_testcase5_1.png" alt="image-20210506185235021" width="300px" height="200px" style="zoom:67%;" /> <img src="assets/bfs_testcase5_2.png" style="zoom:80%;" />
 
 ### Dijkstra's Algorithm
 
@@ -58,7 +59,8 @@ Start node 3, End node 4
 After our manual computation, the path is node 3 -> node 1 -> node 4 which conforms to the result of our algorithm.
 
 Complex Cycle: (Sample #2)
-<img src="assets/AStar_complex_cycle.png" alt="AStar_complex_cycle" style="zoom:50%;" />
+
+<img src="assets/AStar_complex_cycle.png" alt="AStar_complex_cycle" width="600px" height="500px" style="zoom:50%;" />
 
 Start Node: 2979 End Node: 2922
 
