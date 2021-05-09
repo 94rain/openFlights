@@ -46,13 +46,14 @@ In this example, we choose Goroka Airport as our source and London Gatwick Airpo
 <img src="assets/Astar_testcase1_1.png" alt="Astar_testcase1_1" style="zoom: 80%;" />
 
 If we choose disconnected airports, A* search will provide error messages accordingly.
-<img src="assets/Astar_testcase1_2.png" alt="Astar_testcase1_2" style="zoom: 50%;" />
+<img src="assets/Astar_testcase1_2.png" alt="Astar_testcase1_2" width="600px" height="100px" style="zoom: 50%;" />
 
 
 Application on test dataset to prove our algorithm is successful:
 
 Simple Cycle: (Sample #1)
-<img src="assets/AStar_simple_cycle.png" alt="AStar_simple_cycle" style="zoom: 50%;" />
+
+<img src="assets/AStar_simple_cycle.png" alt="AStar_simple_cycle" width="600px" height="200px" style="zoom: 50%;" />
 
 Start node 3, End node 4
 
@@ -60,28 +61,31 @@ After our manual computation, the path is node 3 -> node 1 -> node 4 which confo
 
 Complex Cycle: (Sample #2)
 
-<img src="assets/AStar_complex_cycle.png" alt="AStar_complex_cycle" width="600px" height="500px" style="zoom:50%;" />
+<img src="assets/AStar_complex_cycle.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
 Start Node: 2979 End Node: 2922
 
 After our manual computation, the path is node 2979 -> node 2965 -> node 2990 -> Node 6969 -> Node 2922 which conforms to the result of our algorithm.
 
 Connected Without Cycle: (Sample 3)
-<img src="assets/AStar_connected_without_cycle.png" alt="AStar_connect_without_cycle" style="zoom:50%;" />
+
+<img src="assets/AStar_connected_without_cycle.png" alt="AStar_connect_without_cycle" width="500px" height="200px"  style="zoom:50%;" />
 
 Start Node: 1550 End Node: 302
 
 After our manual computation, the path is node 1550 -> node 502 -> node 1064 -> Node 302 which conforms to the result of our algorithm
 
 Connected Without Cycle: (Sample 4)
-<img src="assets/AStar_connect_without_cycle_1.png" alt="AStar_connect_without_cycle_1" style="zoom:50%;" />
+
+<img src="assets/AStar_connect_without_cycle_1.png" alt="AStar_connect_without_cycle_1" width="500px" height="200px"  style="zoom:50%;" />
 
 Start Node: 344 End Node: 1154
 
 After our manual computation, the path is node 344 -> node 1555 -> node 1128 -> Node 1154 which conforms to the result of our algorithm.
 
 Disconnected: (Sample 5)
-<img src="assets/AStar_disconnected.png" alt="AStar_disconnected" style="zoom:50%;" />
+
+<img src="assets/AStar_disconnected.png" alt="AStar_disconnected" width="550px" height="250px" style="zoom:50%;" />
 
 Start Node: 3393	End Node: 8335
 
