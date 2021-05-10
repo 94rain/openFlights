@@ -3,15 +3,15 @@
 ## Overview
 For our project, we selected openflight dataset to implement the following algorithms: BFS, Dijkstra's algorithm and A* search algorithms. We wish we could use this three graph algorithms to find the shortest path between different airports in real lives. In this report, we will analyze these algorithms and show the outcomes of them.
 ## Implementations
-There are two main datasets routes.csv and airports.csv. Airports.csv contains the information of airports and routes.csv contains routes between different airports. We implement three classes to process the datasets: Airport.cpp, Route.cpp and Openflight.cpp. Airport.cpp enables us to access the IDs, locations, names and other information of the airports in the dataset. Route.cpp enables us to get the information of the source and destination of a route, calculates the distance of that route and store the route by tracing the name of airports. Also, we used Haversine function to compute the distance of every route. OpenFlight.cpp mainly enables us to access all routes for a specific airport and use unorderd map for storing the data of airports and routes.
+There are two main datasets routes.csv and airports.csv. Airports.csv contains the information of airports and routes.csv contains the information of routes between different airports. We implement three classes to process the datasets: Airport.cpp, Route.cpp and Openflight.cpp. Airport.cpp enables us to access the IDs, locations, names and other information of the airports in the dataset. Route.cpp enables us to get the information of the source and destination of a route, calculate the distance of that route and store the route by tracing the name of airports. Also, we used Haversine function to compute the distance of every route. OpenFlight.cpp mainly enables us to access all routes for a specific airport and use unorderd map for storing the data of airports and routes.
 
 ### Breadth First Search
 
-The first algorithm we implemented the Breadth First Search. In our project, we use this algorithm to search each airport from source to destination.
+The first algorithm we implemented is Breadth First Search. In our project, we use this algorithm to search each airport from source to destination.
 To avoid processing a node more than once, we use an `unordered_map` (key: Airport, value: True if the airport has been explored, false otherwise) to mark explored airports.
-We use a `queue` that contain the frontier airports along which the algorithm is currently searching. 
-The simple BFS is only appliable when the graph is connected. To make it work on disconnected graph, we modified the algorithm to perform BFS from each unvisited airport.
-To test the correctness of our BFS algorithm, we developed test cases on five smaller datasets (including simple, complex cycles and disconnected graphs) and checked whether the output path is same as the expected path.
+We use  `queue` to determine the order of traversal. Also, we use `getAdjacentRoute` to travserse adjacent airports before moving on to next airport.
+The simple BFS is only appliable when the graph is connected. To make it work on disconnected graph, we modified the algorithm to perform BFS on each unvisited airport.
+To test the correctness of our BFS algorithm, we developed test cases on five smaller datasets (including simple, complex cycles and disconnected graphs) to checked whether the output path is same as the expected path.
 
 **Simple Cycle** (Sample #1): 4 is the starting point. 
 
@@ -61,7 +61,7 @@ A* is an informed search algorithm. In our project, it starts from a specific st
 At each iteration of its main loop, we use priority queue to select the airport that minimizes
                                                                     f(n) = g(n) + h(n)
 where n is the next airport on the path, g(n) is the route distance from source airport to n. h(n) is a heuristic function that estimates the shortest distance from n to the target airport. 
-Then we record the sum of the current nodes' g(n) and the route distance to its neighbours as tentative_g. If tentative_g is smaller than its neighbours' original g(n), we update its neighours’ g(n) and f(n). Moreover, we need to add its neighbours to our priority queue. Also, we record the previous airport to reconstruct our path. If the airport we pop from our priority queue is our target, then we finished our search. If the priority queue is empty and our targret still is never reached, this means there does not exists route between source and destination airport.
+Then we record the sum of the current nodes' g(n) and the route distance to its neighbours as tentative_g. If tentative_g is smaller than its neighbours' original g(n), we update its neighours’ g(n) and f(n). Moreover, we need to add its neighbours to our priority queue. Also, we record the previous airport to reconstruct our path. If the airport we pop from our priority queue is our target, then we finished our search. If the priority queue is empty and our targret is still never reached, this means there does not exists route between source and destination airport.
 
 Application on full dataset:
 
