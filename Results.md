@@ -46,7 +46,7 @@ The testcases contains short-path, long-path test cases and we also test on disc
 
 **Sample 2**:Complex Cycle
 
-<img src="assets/bfs_testcase2_1.png" alt="image-20210506184754023" width="400px" height="300px" style="zoom: 50%;" /><img src="assets/bfs_testcase2_2.png" alt="image-20210506175018273" style="zoom: 67%;" />
+<img src="assets/AStar_complex_cycle.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
 **Sample 3**:Disconnected graph
 
