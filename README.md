@@ -43,7 +43,7 @@ https://youtu.be/Ge6wcQfbpuE
 
 ## Testing the program
 
-1. To build the tests, run the command `make test`
+1. To build the tests on EWS, run the command `module load llvm/6.0.1` and then enter `make test`.
 2. run `./test` for comprehensive tests
     - To test parts of the program:
       - run `./test [graph]` for OpenFlight graph basic tests
