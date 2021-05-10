@@ -33,6 +33,11 @@ Path of the IDs of traversed airports (ID): 9481, 8335, 6435, 3395, 3393
 
 ### Dijkstra's Algorithm
 
+The second algorithm is Dijkstra Algorthm where we use the constructor to process most of the data. Here, we use the priority queue to calculate the shorest distance and unordered_map to store the coresponding distance for each airport. First, we initialize the distance of each airport to DBL_MAX, then we loop through the airports and calculate the distance to the source airport. During this process, we put the neighbor of the current airport into a priority queue(q), mark the current airport as visited, store the distance in a parameter “dis”, and store the previous airport in “last_airport”.  Finally, if the priority queue is empty, we finish our loop and the construction finished. 
+
+The member function contains get_distance, get_path and isExists and we can use get_distance and get_path to access the data we want. 
+
+
 ### A* Search
 A* is an informed search algorithm. In our project, it starts from a specific starting airport and aims to find a path to the target airport having the least cost.
 At each iteration of its main loop, we use priority queue to select the airport that minimizes
