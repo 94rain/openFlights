@@ -42,7 +42,7 @@ The testcases contains short-path, long-path test cases and we also test on disc
 
 **Sample 1**: Simple Cycle 
 
-<img src="assets/Astar_testcase1_1.png" alt="Astar_testcase1_1" width="500px" height="200px" style="zoom: 80%;" />
+<img src="assets/AStar_simple_cycle.png" alt="AStar_simple_cycle" width="600px" height="200px" style="zoom: 50%;" />
 
 **Sample 2**:Complex Cycle
 
