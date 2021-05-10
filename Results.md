@@ -42,15 +42,19 @@ The testcases contains short-path, long-path test cases and we also test on disc
 
 **Sample 1**: Simple Cycle 
 
-<img src="assets/AStar_simple_cycle.png" alt="AStar_simple_cycle" width="600px" height="200px" style="zoom: 50%;" />
+<img src="assets/dijkstra-simple_sample.png" alt="AStar_simple_cycle" width="600px" height="200px" style="zoom: 50%;" />
 
-**Sample 2**:Complex Cycle
+**Sample 2**: Complex Cycle
 
-<img src="assets/AStar_complex_cycle.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
+<img src="assets/dijkstra-complex_sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
-**Sample 3**:Disconnected graph
+**Sample 3**: One path graph
 
-<img src="assets/bfs_testcase5_1.png" alt="image-20210506185235021" width="300px" height="200px" style="zoom:67%;" /> <img src="assets/bfs_testcase5_2.png" style="zoom:80%;" />
+<img src="assets/dijkstra-connected-sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
+
+**Sample 4**: Disconnected graph
+
+<img src="assets/dijkstra-disconnected-sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
 ### A* Search
 A* is an informed search algorithm. In our project, it starts from a specific starting airport and aims to find a path to the target airport having the least cost.
