@@ -41,12 +41,15 @@ In order to test the Dijkstra algorithms, we first implement test cases on five 
 The testcases contains short-path, long-path test cases and we also test on disconnected airport. We campare the routes we get from our algorithms with the actual ones and also check whether the distance is correct.
 
 **Sample 1**: Simple Cycle 
-<img src="assets/bfs_testcase1_1.png" alt="image-20210506173850837" width="200px" height="200px" style="zoom: 50%;" />![image-20210506174729338](assets/bfs_testcase1_2.png)
+
+<img src="assets/Astar_testcase1_1.png" alt="Astar_testcase1_1" width="500px" height="200px" style="zoom: 80%;" />
 
 **Sample 2**:Complex Cycle
+
 <img src="assets/bfs_testcase2_1.png" alt="image-20210506184754023" width="400px" height="300px" style="zoom: 50%;" /><img src="assets/bfs_testcase2_2.png" alt="image-20210506175018273" style="zoom: 67%;" />
 
 **Sample 3**:Disconnected graph
+
 <img src="assets/bfs_testcase5_1.png" alt="image-20210506185235021" width="300px" height="200px" style="zoom:67%;" /> <img src="assets/bfs_testcase5_2.png" style="zoom:80%;" />
 
 ### A* Search
