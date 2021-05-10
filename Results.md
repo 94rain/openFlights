@@ -9,7 +9,7 @@ There are two main datasets routes.csv and airports.csv. Airports.csv contains t
 
 The first algorithm we implemented is Breadth First Search. In our project, we use this algorithm to search each airport from source to destination.
 To avoid processing a node more than once, we use an `unordered_map` (key: Airport, value: True if the airport has been explored, false otherwise) to mark explored airports.
-We use  `queue` to determine the order of traversal. Also, we use `getAdjacentRoute` to travserse adjacent airports before moving on to next airport.
+We use  `queue` to determine the order of traversal. Also, we use `getAdjacentRoute` to traverse adjacent airports before moving on to next airport.
 The simple BFS is only appliable when the graph is connected. To make it work on disconnected graph, we modified the algorithm to perform BFS on each unvisited airport.
 To test the correctness of our BFS algorithm, we developed test cases on five smaller datasets (including simple, complex cycles and disconnected graphs) to checked whether the output path is same as the expected path.
 
