@@ -19,6 +19,7 @@ https://youtu.be/Ge6wcQfbpuE
 ## Building the program
 1. Clone the project repository
 2. `cd liwens3-yihanz8-zhekaig2-sji15`
+3. Run the command `module load llvm/6.0.1` on EWS
 3. Enter the command `make` in the terminal
 
 ## Running the program
