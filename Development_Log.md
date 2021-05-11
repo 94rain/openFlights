@@ -8,7 +8,7 @@
   We implemented `route` as our graph's edge, `airport` as our graph's node, and `Openflight` classes as our final graph. Liwen Sun added MakeFile and implemented our first algorithm BFS. Shuyang Ji added basic test cases for the Openflight graph and BFS. They updated README to include necessary commands for compiling, running, and testing our project.
 
 ## April 19, 2021 - April 25, 2021
-  We implement the `Dijkstra` class. It includes a constructor and two methods `get_path`, and `get_distance`. The constructor accepts a starting airport and calculates the shortest distance between all of the other airports and the start point storing it into a map. Then get_path and get_distance methods would accept the Airport format of destination and return the corresponding value (distance and the best path to the destination). We also implement some basic tests for this class and run on the total dataset.  Zhekai Ge implemented Dijkstra.h and Dijkstra.cpp and Yihan Zhang added the testcases for the algorithm.
+  We implement the `Dijkstra` class. It includes a constructor and two methods `get_path`, and `get_distance`. The constructor accepts a starting airport and calculates the shortest distance between all of the other airports and the start point storing it into a map. Then get_path and get_distance methods would accept the Airport format of destination and return the corresponding value (distance and the best path to the destination). We also implement some basic tests for this class and run on the total dataset.  Zhekai Ge implemented Dijkstra.h and Dijkstra.cpp and Yihan Zhang added the test cases for the algorithm.
 
 
 ## April 26, 2021 - May 2, 2021
