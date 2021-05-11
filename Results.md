@@ -40,19 +40,34 @@ The member function contains get_distance, get_path and isExists and we can use 
 In order to test the Dijkstra algorithms, we first implement test cases on five simplified  dataset and then run on the total dataset.
 The testcases contains short-path, long-path test cases and we also test on disconnected airport. We campare the routes we get from our algorithms with the actual ones and also check whether the distance is correct.
 
+**Here is the result running on the full dataset**:
+
+The starting airport is Stockholm-Arlanda Airport and the destination is Zhengzhou Xinzheng International Airport. The shortest path between two airports is 
+737->2948->2910->3399->3375
+
+<img src="assets/dijkstra-fulldata.png" alt="AStar_simple_cycle" width="500px" height="150px" style="zoom: 50%;" />
+
 **Sample 1**: Simple Cycle 
+
+Here is the example running on simple_airports_1.csv. It starts from the number 3 airport(Mount Hagen Kagamuga Airport), passes number 1 airport and ends at the number 4 airport.
 
 <img src="assets/dijkstra-simple_sample.png" alt="AStar_simple_cycle" width="600px" height="200px" style="zoom: 50%;" />
 
 **Sample 2**: Complex Cycle
 
+This is the example running on simple_airports_2.csv. It starts from airport Dushanbe and ends at Heydar Aliyev International Airport. The path is 2979->2965->2990->6969->2922
+
 <img src="assets/dijkstra-complex_sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
 **Sample 3**: One path graph
 
+This is the example running on simple_airports_3.csv. It starts from airport Verona Villafranca Airport and ends at Brussels Airport. The path is 1550->502->1064->302
+
 <img src="assets/dijkstra-connected-sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
 **Sample 4**: Disconnected graph
+
+This is the example running on simple_airports_5.csv. It starts from number 6435 airport and ends at number 8335 airport. Since there is no path between two airports,  the result would be error and return an no path mesage. 
 
 <img src="assets/dijkstra-disconnected-sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
