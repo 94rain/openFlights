@@ -48,7 +48,7 @@ The testcases contain short-path, long-path test cases and we also test on disco
 **Here is the result running on the full dataset**:
 
 The starting airport is Stockholm-Arlanda Airport and the destination is Zhengzhou Xinzheng International Airport. The shortest path between two airports is 
-737->2948->2910->3399->3375
+737->2948->2910->3399->3375.
 
 <img src="assets/dijkstra-fulldata.png" alt="AStar_simple_cycle" width="500px" height="150px" style="zoom: 50%;" />
 
