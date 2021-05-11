@@ -7,20 +7,24 @@
 * [Development Log](Development_Log.md)
 * [Results](Results.md)
 
-## Source code
+## Directory structures
 * Algorithms: `algorithm/*`
   * [AStar.h](algorithm/AStar.h) · [AStar.cpp](algorithm/AStar.cpp)
   * [BFS.h](algorithm/BFS.h) · [BFS.cpp](algorithm/BFS.cpp)
   * [Dijkstra.h](algorithm/Dijkstra.h) · [Dijkstra.cpp](algorithm/Dijkstra.cpp)
+* data: `data/*`
+  * [airports.csv](data/airports.csv) · [routes.csv](data/routes.csv)
+* tests: `tests/*`
+  * [test_AStar.cpp](tests/test_AStar.cpp) · [test_BFS.cpp](tests/test_BFS.cpp) · [test_Dijkstra.cpp](tests/test_Dijkstra.cpp) · [test_graph.cpp](tests/test_graph.cpp)
 
 ## Video
-https://youtu.be/Ge6wcQfbpuE
+[View our presentation on YouTube](https://youtu.be/Ge6wcQfbpuE)
 
 ## Building the program
 1. Clone the project repository
 2. `cd liwens3-yihanz8-zhekaig2-sji15`
 3. Run the command `module load llvm/6.0.1` on EWS
-3. Enter the command `make` in the terminal
+4. Enter the command `make` in the terminal
 
 ## Running the program
 
