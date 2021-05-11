@@ -22,6 +22,8 @@ int main() {
     "data/simple_airports_3.csv", "data/simple_airports_4.csv", "data/simple_airports_5.csv"};
   vector<string> route_files {"data/routes.csv", "data/simple_routes_1.csv", "data/simple_routes_2.csv", 
     "data/simple_routes_3.csv", "data/simple_routes_4.csv", "data/simple_routes_5.csv"};
+
+  // options for selecting the dataset in which you hope to find the shortest path
   while (true) {
     cout << "Please select the dataset in which you hope to find the shortest path: (enter a number from 0, 1, 2, 3, 4, 5, 6)\n"
          << "Input \t Airport dataset location \t Routes dataset location " << endl;
@@ -33,7 +35,7 @@ int main() {
     int file_num = 0;
     cin >> file_num;
     getchar();
-    // getline(cin,"\n");
+    // customize input datasets
     if (file_num == 6) {
       cout << "Input the relative path of your airport dataset: (Example: data/airports.csv) " << endl;
       getline(cin, airport_file);
@@ -43,11 +45,14 @@ int main() {
       airport_file = airport_files[file_num];
       route_file = route_files[file_num];
     } else {
+      // Invalid input
       cout << "Invalid input." << endl;
       continue;
     }
     break;
   }
+
+  // Options to select the algorithm
   while (true) {
     cout << "Select your algorithm from: (enter a number from 1, 2, 3 or exit) \n 1. BFS \n 2. Dijkstra \n 3. A* " << endl;
     getline(cin, algorithm);
@@ -114,6 +119,7 @@ int main() {
       cout << "Your input is invalid. Please try again. (enter a number from 1, 2, 3 or exit)" << endl;
       continue;
     }
+    // allow for using another algorithm
     cout <<"========= The algorithm completed, you can try another algorithm if you wish ========= " << endl;
   }
 }
