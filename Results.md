@@ -60,7 +60,7 @@ Here is the example running on simple_airports_1.csv. It starts from the number 
 
 **Sample 2**: Complex Cycle
 
-This is the example running on simple_airports_2.csv. It starts from airport Dushanbe and ends at Heydar Aliyev International Airport. The path is 2979->2965->2990->6969->2922
+This is the example running on simple_airports_2.csv. It starts from Dushanbe airport and ends at Heydar Aliyev International Airport. The path is 2979->2965->2990->6969->2922
 
 <img src="assets/dijkstra-complex_sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
