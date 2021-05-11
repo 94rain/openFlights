@@ -66,7 +66,7 @@ This is the example running on simple_airports_2.csv. It starts from Dushanbe ai
 
 **Sample 3**: One path graph
 
-This is the example running on simple_airports_3.csv. It starts from airport Verona Villafranca Airport and ends at Brussels Airport. The path is 1550->502->1064->302
+This is the example running on simple_airports_3.csv. It starts from airport Verona Villafranca Airport and ends at Brussels Airport. The path is 1550->502->1064->302.
 
 <img src="assets/dijkstra-connected-sample.png" alt="AStar_complex_cycle" width="400px" height="300px" style="zoom:50%;" />
 
