@@ -42,7 +42,7 @@ The second algorithm is the Dijkstra's Algorithm where we use the constructor to
 
 The member function contains get_distance, get_path and isExists and we can use get_distance and get_path to access the data we want. 
 
-In order to test the Dijkstra algorithms, we first implement test cases on five simplified  dataset and then run on the total dataset.
+In order to test the Dijkstra algorithm, we first implement test cases on five simplified  dataset and then run on the total dataset.
 The testcases contain short-path, long-path test cases and we also test on disconnected airports. We compare the routes we get from our algorithms with the actual ones and also check whether the distance is correct.
 
 **Here is the result running on the full dataset**:
