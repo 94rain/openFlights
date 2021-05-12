@@ -14,6 +14,7 @@
   * [Dijkstra.h](algorithm/Dijkstra.h) · [Dijkstra.cpp](algorithm/Dijkstra.cpp)
 * data: `data/*`
   * [airports.csv](data/airports.csv) · [routes.csv](data/routes.csv)
+  * simple_airports_n.csv · simple_routes_n.csv (n=1,2,3,4,5 smaller datasets)
 * tests: `tests/*`
   * [test_AStar.cpp](tests/test_AStar.cpp) · [test_BFS.cpp](tests/test_BFS.cpp) · [test_Dijkstra.cpp](tests/test_Dijkstra.cpp) · [test_graph.cpp](tests/test_graph.cpp)
 
@@ -30,11 +31,11 @@
 
 1. After building the program, run `./openflight` in the terminal.
 
-2. The terminal prompt will ask you to select the dataset in which you hope to find the shortest path.
+2. The terminal prompt will ask you to select the dataset in which you hope to find the shortest path. You can also choose to customize input datasets by inputting the relative file paths.
 
     ![image](assets/example_choose_dataset.png)
 
-3. There are 3 options appeared `1. BFS`, `2. Dijkstra`, `3. A*`. Choose one of the algorithms by entering the number `1`, `2` or `3`.
+3. There will appear 3 options `1. BFS`, `2. Dijkstra`, `3. A*`. Choose one of the algorithms by entering the number `1`, `2` or `3`.
 
     ![Image text](assets/example_choose_algorithm.png)
 
@@ -45,6 +46,10 @@
 5. Finally, the program will use the chosen algorithm to calculate the shortest path from the starting airport to the ending airport and print out the corresponding airport IDs and names along the path including the start and end point. The result will look like this:
 
     ![Image text](assets/example_result.png)
+  
+6. In the end, you can enter `exit` to exit the program, or run another algorithm if you wish.
+
+    ![Image text](assets/example_exit.png)
 
 ## Testing the program
 
@@ -53,7 +58,7 @@
     - To test parts of the program:
       - run `./test [graph]` for OpenFlight graph basic tests
       - run `./test [bfs]` for BFS algorithm tests
-      - run `./test [dataset=n]` (n=1,2,3,4) for testing individual datasets
+      - run `./test [dataset=n]` (n=1,2,3,4,5) for testing individual datasets
       - run `./test [dijkstra]` for Dijkstra's Algorithm tests
       - run `./test [astar]` for A* Algorithm tests
 
