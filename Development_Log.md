@@ -16,3 +16,6 @@
 
 ## May 3, 2021 - May 9, 2021
   We started to work on the main program and modify some details in the code. We added the command line arguments that allow for selecting the algorithm used to find the shortest path in the command line prompt. We also check whether the input is valid and provide options for exiting the program. We added additional test cases to ensure the correctness of our program (including tests in disconnected and cyclic graph). We wrote a initial draft for the project results. Also, we finished the final presentation video.
+
+## May 10, 2021 - May 12, 2021
+  In the final week, we confirmed that we have answered the ‘leading question’ we were hoping to solve. Reflecting on what achievements we have made, what unexpected outcomes and discoveries we have found, and what challenges we have overcome, we completed writing up the project results, finished the final presentation video and polished our documentation.
